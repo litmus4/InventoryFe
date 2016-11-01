@@ -1,0 +1,54 @@
+function CharacterPanel.GetEquipBox(page, nIndex)
+	if nIndex == EQUIPMENT_INVENTORY.HELM then
+		return page:Lookup("Wnd_Equit", "Box_Helm")
+	elseif nIndex == EQUIPMENT_INVENTORY.CHEST then
+		return page:Lookup("Wnd_Equit", "Box_Chest")
+	elseif nIndex == EQUIPMENT_INVENTORY.BANGLE then
+		return page:Lookup("Wnd_Equit", "Box_Bangle")
+	elseif nIndex == EQUIPMENT_INVENTORY.WAIST then
+		return page:Lookup("Wnd_Equit", "Box_Waist")
+	elseif nIndex == EQUIPMENT_INVENTORY.PANTS then
+		return page:Lookup("Wnd_Equit", "Box_Pants")
+	elseif nIndex == EQUIPMENT_INVENTORY.BOOTS then
+		return page:Lookup("Wnd_Equit", "Box_Boots")
+	elseif nIndex == EQUIPMENT_INVENTORY.WAIST_EXTEND then
+		return page:Lookup("Wnd_Equit", "Box_Extend")
+	elseif nIndex == EQUIPMENT_INVENTORY.AMULET then
+		return page:Lookup("Wnd_Equit", "Box_Amulet")
+	elseif nIndex == EQUIPMENT_INVENTORY.PENDANT then
+		return page:Lookup("Wnd_Equit", "Box_Pendant")
+	elseif nIndex == EQUIPMENT_INVENTORY.LEFT_RING then
+		return page:Lookup("Wnd_Equit", "Box_LeftRing")
+	elseif nIndex == EQUIPMENT_INVENTORY.RIGHT_RING then
+		return page:Lookup("Wnd_Equit", "Box_RightRing")
+	elseif nIndex == EQUIPMENT_INVENTORY.MELEE_WEAPON then
+		return page:Lookup("Wnd_Weapon", "Box_MeleeWeapon")
+	elseif nIndex == EQUIPMENT_INVENTORY.RANGE_WEAPON then
+		return page:Lookup("Wnd_Weapon", "Box_RangeWeapon")
+	elseif nIndex == EQUIPMENT_INVENTORY.ARROW then
+		return page:Lookup("Wnd_Weapon", "Box_AmmoPouch")
+	elseif nIndex == EQUIPMENT_INVENTORY.BACK_EXTEND then
+		return page:Lookup("Wnd_Equit", "Box_Amice")
+	else
+		return nil
+	end
+end
+
+function CharacterPanel.UpdataEquipItem(nItemIndex)
+    local player = GetClientPlayer()
+    if not player then
+    	return
+    end
+    local box = CharacterPanel.GetEquipBox(CharacterPanel.GetPageBattle(), nItemIndex)
+    if not box then --如果是背包，就不存在
+        return
+    end
+    local item = player.GetItem(INVENTORY_INDEX.EQUIP, nItemIndex)
+    UpdataItemBoxObject(box, INVENTORY_INDEX.EQUIP, nItemIndex, item)
+end
+
+itemInfo = GetItemInfo(item.dwTabType, item.dwIndex)
+
+szTip = szTip.."<Text>text="..EncodeComponentsString(FormatString(g_tStrings.STR_ITEM_H_DURABILITY, item.nCurrentDurability, item.nMaxDurability)).." font=106 </text>"
+
+szTip = szTip.."<Text>text="..EncodeComponentsString(FormatString(g_tStrings.STR_ITEM_H_MAX_DURABILITY, itemInfo.nMaxDurability)).." font=106 </text>"

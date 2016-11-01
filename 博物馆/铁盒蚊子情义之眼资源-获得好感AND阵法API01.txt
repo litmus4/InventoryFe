@@ -1,0 +1,181 @@
+-------------------------------------------------------------------------------------------------------
+function PartyPanel.UpdateFriendContent(frame, dwID, nGroup)
+	local player = GetClientPlayer()
+	local aInfo = player.GetFellowshipData(dwID) --获得好感度值
+	if not aInfo then
+		return
+	end
+	
+	local page = frame:Lookup("Wnd_FriendInfo")
+	page.dwID, page.nGroup, page.remark, page.name = dwID, nGroup, aInfo.remark, aInfo.name
+	local handle = page:Lookup("", "")
+	local hInfo = handle:Lookup("Handle_Info")
+	
+	local textN = hInfo:Lookup("Text_FriendName")
+	local textL = hInfo:Lookup("Text_FriendLevel")
+	local textA = hInfo:Lookup("Text_FriendAttraction")
+	local textM = hInfo:Lookup("Text_FriendMap")
+	local textS = hInfo:Lookup("Text_FriendSchool")
+
+	local bOnline = aInfo.level ~= 0
+	local nFont = PartyPanel.GetFriendFont(bOnline, aInfo.married, aInfo.brother)	
+	textN:SetFontScheme(nFont)
+	
+	textN:SetText(aInfo.name)
+	
+	local szLevel = ""
+	if bOnline then
+		szLevel = FormatString(g_tStrings.STR_FRIEND_WTHAT_LEVEL, aInfo.level)
+	end
+	textL:SetText(szLevel)
+
+    local nLevel = PartyPanel.GetAttractionLevel(aInfo.attraction)
+    local szLevel = g_tStrings.tAttractionLevel[nLevel].."("..aInfo.attraction..")"  --获得好感等级并显示好感
+	textA:SetText(szLevel)
+	
+	local szSchoolName = GetForceTitle(aInfo.forceid)
+	textS:SetText(szSchoolName)
+	
+	local imgBgNormal = hInfo:Lookup("Image_AttractionBg1")
+	local imgBgMarried = hInfo:Lookup("Image_Attractionbg2")
+	local nFrame = 50
+	if aInfo.married then
+		imgBgNormal:Hide()
+		imgBgMarried:Show()
+		nFrame = 47
+	elseif aInfo.brother then
+		imgBgNormal:Hide()
+		imgBgMarried:Show()
+		nFrame = 51
+	else
+		imgBgNormal:Show()
+		imgBgMarried:Hide()
+	end
+	
+	local nLevel, fP = PartyPanel.GetAttractionLevel(aInfo.attraction)
+	for i = 1, nLevel, 1 do
+		local img = hInfo:Lookup("Image_Heart"..i)
+		img:SetFrame(nFrame)
+		img:Show()
+		if i == nLevel then
+			img:SetPercentage(fP)
+		else
+			img:SetPercentage(1)
+		end
+	end
+	for i = nLevel + 1, 7, 1 do
+		hInfo:Lookup("Image_Heart"..i):Hide()
+	end
+	
+	local szMap = ""
+	if not bOnline then
+	    szMap = g_tStrings.STR_FRIEND_NOT_ON_LINE
+	elseif nLevel >= 3 then
+	    szMap = GetMapParams(aInfo.mapid)
+	elseif nLevel < 3 then
+	    szMap = g_tStrings.STR_FRIEND_CANNOT_KNOW_WHAT_MAP
+	end
+	textM:SetText(szMap)
+	
+	if aInfo.remark == "" then
+	    aInfo.remark = g_tStrings.STR_FRIEND_INPUT_MARK
+	end
+	page:Lookup("Edit_Name"):SetText(aInfo.remark)
+	
+	local szGroup = ""
+	if nGroup == 0 then
+		szGroup = g_tStrings.STR_FRIEND_GOOF_FRIEND
+	else
+		szGroup = player.GetFellowshipGroupName(nGroup)
+	end
+	handle:Lookup("Text_Group"):SetText(szGroup)
+end
+-------------------------------------------------------------------------------------------------------
+function RaidPanel.UpdateMemberLFData(hMember)
+	local hTeam = GetClientTeam()
+	local tMemberInfo = hTeam.GetMemberInfo(hMember.dwID) --获得成员信息
+	
+	local szPath, nFrame = GetForceImage(tMemberInfo.dwForceID)
+	hMember:Lookup("Image_Force"):FromUITex(szPath, nFrame)
+	
+	local hTextName = hMember:Lookup("Text_Name")
+	hTextName:SetText(tMemberInfo.szName)
+	-- local hTextLevel = hMember:Lookup("Text_Level")
+	local hImageOffline = hMember:Lookup("Image_OffLine")
+	local hImageLife = hMember:Lookup("Image_Health")
+	local hImageMana = hMember:Lookup("Image_Mana")
+	hMember.bOnline = tMemberInfo.bIsOnLine
+	if hMember.bOnline then
+		hTextName:SetFontScheme(18)
+		-- hTextLevel:SetText(tMemberInfo.nLevel)
+		-- hTextLevel:Show()
+		hImageLife:Show()
+		hImageMana:Show()
+	else
+		hTextName:SetFontScheme(108)
+		-- hTextLevel:Hide()
+		hImageLife:Hide()
+		hImageMana:Hide()
+	end	
+	
+--	local nCampFrame = nil
+--	if tMemberInfo.nCamp == CAMP.GOOD then
+--		nCampFrame = 7
+--	elseif tMemberInfo.nCamp == CAMP.EVIL then
+--		nCampFrame = 5
+--	end
+--	local hImageCamp = hMember:Lookup("Image_Camp")
+--	if nCampFrame then
+--		hImageCamp:SetFrame(nCampFrame)
+--		hImageCamp:Show()
+--	else
+--		hImageCamp:Hide()
+--	end
+	
+	local hImageReady = hMember:Lookup("Image_Cover")
+	if RaidPanel.tMemberState[hMember.dwID].bReadyConfirm then
+		hImageReady:Show()
+	else
+		hImageReady:Hide()
+	end
+	
+	local hImageLeader = hMember:Lookup("Image_Flag")
+	hMember.bLeader = (hTeam.GetAuthorityInfo(TEAM_AUTHORITY_TYPE.LEADER) == hMember.dwID)
+	if hMember.bLeader then
+		hImageLeader:Show()
+	else
+		hImageLeader:Hide()
+	end
+	
+	local hImageDistribute = hMember:Lookup("Image_Boss")
+	if hTeam.GetAuthorityInfo(TEAM_AUTHORITY_TYPE.DISTRIBUTE) == hMember.dwID then
+		hImageDistribute:Show()
+	else
+		hImageDistribute:Hide()
+	end
+	
+	local hImageMark = hMember:Lookup("Image_Mark")
+	if hTeam.GetAuthorityInfo(TEAM_AUTHORITY_TYPE.MARK) == hMember.dwID then
+		hImageMark:Show()
+	else
+		hImageMark:Hide()
+	end
+	
+	local hImageFormation = hMember:Lookup("Image_Center")
+	if hMember:GetRoot().dwFormationLeader == hMember.dwID then
+		hImageFormation:Show()
+	else
+		hImageFormation:Hide()
+	end
+	
+	local hMatrix = hMember:Lookup("Handle_Matrix")
+	hMatrix.nFormationCoefficient = GetFormationEffect(tMemberInfo.nFormationCoefficient) --获得阵法系数
+	for i = 1, 7 do
+		local hMatrixPoint = hMatrix:Lookup("Image_" .. i .. "H")
+		if i <= hMatrix.nFormationCoefficient then
+			hMatrixPoint:Show()
+		else
+			hMatrixPoint:Hide()
+		end
+	end
+end

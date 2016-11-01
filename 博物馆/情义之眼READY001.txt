@@ -1,0 +1,13 @@
+local player = GetClientPlayer()
+if not player then
+	return
+end
+local dwTeamID = GetClientTeam().dwTeamID
+local party = GetClientTeam().GetTeamMemberList(dwTeamID)
+if aParty then
+	for i,v in pairs(aParty) do
+		local partyplayer = GetPlayer(v)
+		if partyplayer then
+			for j,v2 in pairs(--[[好友列表？]]) do
+				local ppfinfo = partyplayer.GetFellowshipData(v2)
+				if ppfinfo then --后边看partypanel里的PartyPanel.UpdateFriend来修改
