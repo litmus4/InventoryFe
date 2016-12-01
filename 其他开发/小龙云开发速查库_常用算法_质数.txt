@@ -1,0 +1,15 @@
+#include "stdio.h"
+#include "math.h"
+
+bool IsPrime(int x)
+{
+	if(x<2) return false;
+	int i=2;
+	bool bOut=true;
+	do
+	{
+		if(!(x%i) && x!=2) bOut=false;
+		else i++;
+	}while(i<=sqrt(static_cast<float>(x)) && bOut);
+	return bOut;
+}
