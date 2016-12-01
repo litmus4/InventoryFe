@@ -1,0 +1,660 @@
+AnimationID	KindID	SheathType	AnimationRatio	AnimationSpeed	IsLoop	AnimationFile
+0	0	0	1	1	0	
+1	22	1			0	Data\source\player\M2\动作\M2b02zd死亡.tani
+2	22				0	死亡
+3	22				0	死亡
+4	22				0	死亡
+5	23	1			0	Data\source\player\M2\动作\M2b02zd爬起.tani
+6	23				0	复活
+7	23				0	复活
+8	23				0	复活
+9	5				1	Data\source\player\M2\动作\M2b02yd行走.tani
+10	5				1	Data\source\player\M2\动作\M2b04ty行走.tani
+11	5				1	Data\source\player\M2\动作\M2b04ty行走.tani
+12	5				1	Data\source\player\M2\动作\M2b03ty行走.tani
+13	5				1	Data\source\player\M2\动作\M2b05ty行走.tani
+14	5				1	行走
+15	5				1	行走
+16	5				1	Data\source\player\M2\动作\M2b02yd奔跑.tani
+17	5				1	Data\source\player\M2\动作\M2b04ty奔跑.tani
+18	5				1	Data\source\player\M2\动作\M2b04ty奔跑.tani
+19	5				1	Data\source\player\M2\动作\M2b03ty奔跑.tani
+20	5				1	Data\source\player\M2\动作\M2b05ty奔跑.tani
+21	5				1	Data\source\player\M2\动作\M2b02yd奔跑.tani
+22	5				1	跑步
+23	5				1	Data\source\player\M2\动作\M2b01ty后退01.tani
+24	5	2			1	Data\source\player\M2\动作\M2b01qt战斗待机后退01.tani
+25	5	2			1	Data\source\player\M2\动作\M2b03ty战斗待机后退01.tani
+26	5	2			1	Data\source\player\M2\动作\M2b04ty战斗待机后退01.tani
+27	5	2			1	Data\source\player\M2\动作\M2b05ty战斗待机后退01.tani
+28	5				1	后退
+29	5				1	后退
+30	1	1			1	Data\source\player\M2\动作\M2b01ty普通待机01.ani
+31	1	2			1	Data\source\player\M2\动作\M2b04ty持武器普通待机02.ani
+32	1	2			1	Data\source\player\M2\动作\M2b04ty持武器普通待机01.ani
+33	1	2			1	Data\source\player\M2\动作\M2b03ty持武器普通待机02.ani
+34	1	2			1	Data\source\player\M2\动作\M2b03ty持武器普通待机01.ani
+35	1	2			1	Data\source\player\M2\动作\M2b01qt持武器普通待机03.ani
+36	1	2			1	Data\source\player\M2\动作\M2b01qt持武器普通待机02.ani
+37	1	2			1	Data\source\player\M2\动作\M2b05ty持武器普通待机01.ani
+38	1	2			1	Data\source\player\M2\动作\M2b05ty持武器普通待机01.ani
+39	1	2			1	Data\source\player\M2\动作\M2b01bi持武器普通待机01.ani
+40	1	1			1	Data\source\player\M2\动作\M2b04ty空手普通待机.ani
+41	1	1			1	Data\source\player\M2\动作\M2b04ty空手普通待机.ani
+42	1	1			1	Data\source\player\M2\动作\M2b03ty空手普通待机.ani
+43	1	1			1	Data\source\player\M2\动作\M2b05ty空手普通待机.ani
+44	1				1	普通待机
+45	1				1	普通待机
+46	1				1	普通待机
+47	2	2			1	Data\source\player\M2\动作\M2b04ty战斗待机.ani
+48	2	2			1	Data\source\player\M2\动作\M2b04tc战斗待机01.ani
+49	2	2			1	Data\source\player\M2\动作\M2b03ty战斗待机.ani
+50	2				1	Data\source\player\M2\动作\M2b01qt战斗待机01.ani
+51	2	2			1	Data\source\player\M2\动作\M2b05ty战斗待机.ani
+52	2	2			1	Data\source\player\M2\动作\M2b01bi战斗待机02.ani
+53	2	2			1	Data\source\player\M2\动作\M2b01aq战斗待机03.ani
+54	12	2			0	data\source\player\M2\动作\M2b01qt攻击01.tani
+55	12	2			0	data\source\player\M2\动作\M2b01qt攻击05.tani
+56	12	2			0	data\source\player\M2\动作\M2b01qt攻击06.tani
+57	12	2			0	Data\source\player\M2\动作\M2b04qi攻击01.tani
+58	12	2			0	Data\source\player\M2\动作\M2b04qi攻击02.tani
+59	12	2			0	Data\source\player\M2\动作\M2b04gu攻击03.tani
+60	12	2			0	Data\source\player\M2\动作\M2b04ty攻击03.tani
+61	12	2			0	Data\source\player\M2\动作\M2b03ty攻击08.tani
+62	12	2			0	Data\source\player\M2\动作\M2b03ty攻击09.tani
+63	12	2			0	Data\source\player\M2\动作\M2b03ty攻击10.tani
+64	12	2			0	Data\source\player\M2\动作\M2b05ty攻击01.tani
+65	12	2			0	Data\source\player\M2\动作\M2b05ty攻击02.tani
+66	13	2			0	Data\source\player\M2\动作\M2b05ty攻击03.tani
+67	12	2			0	Data\source\player\M2\动作\M2b01bi攻击11.tani
+68	12	2			0	Data\source\player\M2\动作\M2b01bi攻击13.tani
+69	12	2			0	Data\source\player\M2\动作\M2b01bi攻击15.tani
+70	14	1			0	Data\source\player\M2\动作\M2b01aq攻击21.tani
+71	14	1			0	Data\source\player\M2\动作\M2b01aq攻击22.tani
+72	14	1			0	Data\source\player\M2\动作\M2b01aq攻击23.tani
+73	10	2	0.7		0	Data\source\player\M2\动作\M2b01ty被击01.tani
+74	10	2	0.7		0	Data\source\player\M2\动作\M2b03ty被击01.tani
+75	10	2	0.7		0	Data\source\player\M2\动作\M2b04ty被击01.tani
+76	10	2	0.7		0	Data\source\player\M2\动作\M2b05ty被击01.tani
+77	10	2	0.7		0	Data\source\player\M2\动作\M2b01bi被击01.tani
+78	10	2	0.7		0	Data\source\player\M2\动作\M2b01ty被击01.tani
+79	10	2	0.7		0	Data\source\player\M2\动作\M2b01ty被击01.tani
+80	29	1			1	Data\source\player\M2\动作\M2b02zd眩晕.tani
+81	12	2			0	Data\source\player\M2\动作\M2b04gu攻击01.tani
+82	12	2			0	Data\source\player\M2\动作\M2b04gu攻击04.tani
+83	12	2			0	Data\source\player\M2\动作\M2b04gu攻击03.tani
+84	43	2			0	Data\source\player\M2\动作\M2b01bi格挡.tani
+85	43	2			0	Data\source\player\M2\动作\M2b01qt格挡.tani
+86	43	2			0	Data\source\player\M2\动作\M2b03ty格挡.tani
+87	43	2			0	Data\source\player\M2\动作\M2b04ty格挡.tani
+88	43	2			0	Data\source\player\M2\动作\M2b05ty格挡.tani
+90	5				1	Data\source\player\M2\动作\M2b01ty后退02.tani
+91	5	2			0	Data\source\player\M2\动作\M2b01qt战斗待机后退02.tani
+92	5	2			0	Data\source\player\M2\动作\M2b03ty战斗待机后退02.tani
+93	5	2			0	Data\source\player\M2\动作\M2b04ty战斗待机后退02.tani
+94	5	2			0	Data\source\player\M2\动作\M2b05ty战斗待机后退02.tani
+95	11	1			1	Data\source\player\M2\动作\M2b02xs攻击02-01.tani
+96	14				0	Data\source\player\M2\动作\M2b02xs攻击02-02.tani
+97	14	2			0	Data\source\player\M2\动作\M2b02xs攻击04.tani
+98	15	1			0	Data\source\player\M2\动作\M2b02xs攻击05.tani
+99	15	2			0	Data\source\player\M2\动作\M2b02xs攻击01.tani
+100	1				1	Data\source\player\M2\动作\M2选人界面待机.ani
+101	8	1			0	Data\source\player\M2\动作\M2b02dj站立引导a.ani
+102	11	1			1	Data\source\player\M2\动作\M2b02dj站立引导b.ani
+103	9	1			0	Data\source\player\M2\动作\M2b02dj站立引导c.ani
+105	1	1			1	Data\source\player\M2\动作\M2H坐马车.ani
+106	1	1			1	Data\source\player\M2\动作\M2b02dj打坐a.tani
+107	11	1			0	data\source\player\M2\动作\M2H上马02.tani
+112	11	1			0	Data\source\player\M2\动作\M2b02dj站立引导3秒.ani
+150	31	1			0	Data\source\player\M2\动作\M2b02dj拱手.ani
+151	31	1			0	Data\source\player\M2\动作\M2b02dj鼓掌.tani
+152	31	1			0	Data\source\player\M2\动作\M2b02dj哭.tani
+153	31	1			0	Data\source\player\M2\动作\M2b02dj笑.tani
+154	31	1			0	Data\source\player\M2\动作\M2b02dj说话.tani
+159	1	1			0	Data\source\player\M2\动作\M2s06吃饭01.tani
+160	1	1			0	Data\source\player\M2\动作\M2s06吃饭02.tani
+161	1	1			0	Data\source\player\M2\动作\M2s06打水01.ani
+162	1	1			0	Data\source\player\M2\动作\M2s06二指禅01.ani
+163	1	1			0	Data\source\player\M2\动作\M2s06二指禅02.ani
+164	24	1			0	Data\source\player\M2\动作\M2s06sh摆摊01.ani
+165	31	1			0	Data\source\player\M2\动作\M2b02dj吃.tani
+166	31	1			0	Data\source\player\M2\动作\M2b02dj喝.tani
+167	26	1			0	Data\source\player\M2\动作\M2b02dj跪01.tani
+168	27	1			1	Data\source\player\M2\动作\M2b02dj跪02.tani
+169	28	1			0	Data\source\player\M2\动作\M2b02dj跪03.tani
+170	31	1			0	Data\source\player\M2\动作\M2b02dj点头.tani
+171	31	1			0	Data\source\player\M2\动作\M2b02dj摇头.tani
+172	31	1			0	Data\source\player\M2\动作\M2b02dj振臂.tani
+173	31	1			0	Data\source\player\M2\动作\M2b02dj苦恼.tani
+174	31	1			0	Data\source\player\M2\动作\M2s06sh请客01.tani
+175	26	1			0	Data\source\player\M2\动作\M2b02dj坐a.tani
+176	27	1			1	Data\source\player\M2\动作\M2b02dj坐b.ani
+177	28	1			0	Data\source\player\M2\动作\M2b02dj坐c.tani
+200	8	1			0	Data\source\player\M2\动作\M2b02dj拾取a.ani
+201	9	1			0	Data\source\player\M2\动作\M2b02dj拾取c.ani
+202	6				1	Data\source\player\M2\动作\M2b02yd挪步左.tani
+203	6				1	Data\source\player\M2\动作\M2b02yd挪步右.tani
+204	16				0	Data\source\player\M2\动作\M2b02yd握拳小跳a.tani
+205	17				1	Data\source\player\M2\动作\M2b02yd握拳小跳b.ani
+206	18				0	Data\source\player\M2\动作\M2b02yd握拳小跳c.tani
+207	24	1			0	Data\source\player\M2\动作\M2b02dj打坐a.tani
+208	25	1			0	Data\source\player\M2\动作\M2b02dj打坐c.tani
+209	18				0	Data\source\player\M2\动作\M2b02yd缓冲01.tani
+210	7	1			0	Data\source\player\M2\动作\M2b04ty拔武器01a.ani
+211	7	2			0	Data\source\player\M2\动作\M2b04ty拔武器01b.tani
+212	7	1			0	Data\source\player\M2\动作\M2b03ty拔武器02a.ani
+213	7	2			0	Data\source\player\M2\动作\M2b03ty拔武器02b.tani
+214	7	1			0	Data\source\player\M2\动作\M2b01qt拔武器03a.ani
+215	7	2			0	Data\source\player\M2\动作\M2b01qt拔武器03b.ani
+216	7	1			0	Data\source\player\M2\动作\M2b05ty拔武器01a.ani
+217	7	2			0	Data\source\player\M2\动作\M2b05ty拔武器01b.tani
+218	7	1			0	Data\source\player\M2\动作\M2b01bi拔武器01a.ani
+219	7	2			0	Data\source\player\M2\动作\M2b01bi拔武器01b.tani
+220	7	1			0	Data\source\player\M2\动作\M2b01qt拔武器02a.ani
+221	7	2			0	Data\source\player\M2\动作\M2b01qt拔武器02b.ani
+222	24	1			0	Data\source\player\M2\动作\M2b02dj坐下a.tani
+223	25	1			0	Data\source\player\M2\动作\M2b02dj坐下c.tani
+224	19				0	Data\source\player\M2\动作\M2b02yd握拳二段跳a.tani
+225	20				1	Data\source\player\M2\动作\M2b02yd握拳小跳b.ani
+226	21				0	Data\source\player\M2\动作\M2b02yd握拳小跳c.tani
+227	7	2			0	Data\source\player\M2\动作\M2b01bi插武器01a.tani
+228	7	1			0	Data\source\player\M2\动作\M2b01bi插武器01b.ani
+229	7	2			0	Data\source\player\M2\动作\M2b01qt插武器02a.ani
+230	7	1			0	Data\source\player\M2\动作\M2b01qt插武器02b.ani
+231	7	2			0	Data\source\player\M2\动作\M2b01qt插武器03a.ani
+232	7	1			0	Data\source\player\M2\动作\M2b01qt插武器03b.ani
+233	7	2			0	Data\source\player\M2\动作\M2b03ty插武器02a.tani
+234	7	1			0	Data\source\player\M2\动作\M2b03ty插武器02b.ani
+235	7	2			0	Data\source\player\M2\动作\M2b03ty插武器01a.tani
+236	7	1			0	Data\source\player\M2\动作\M2b03ty插武器01b.ani
+237	7	2			0	Data\source\player\M2\动作\M2b04ty插武器01a.tani
+238	7	1			0	Data\source\player\M2\动作\M2b04ty插武器01b.ani
+239	7	2			0	Data\source\player\M2\动作\M2b04ty插武器02a.tani
+240	7	1			0	Data\source\player\M2\动作\M2b04ty插武器02b.ani
+241	7	2			0	Data\source\player\M2\动作\M2b05ty插武器01a.tani
+242	7	1			0	Data\source\player\M2\动作\M2b05ty插武器01b.ani
+243	7	2			0	Data\source\player\M2\动作\M2b05ty插武器02a.tani
+244	7	1			0	Data\source\player\M2\动作\M2b05ty插武器02b.ani
+250	44	2			0	Data\source\player\M2\动作\M2b01ty闪避.tani
+251	44	2			0	Data\source\player\M2\动作\M2b04ty闪避.tani
+252	44	2			0	Data\source\player\M2\动作\M2b03ty闪避.tani
+253	44	2			0	Data\source\player\M2\动作\M2b05ty闪避.tani
+254	3	1			1	Data\source\player\M2\动作\M2b02yd游泳水中待机.tani
+255	4	1			1	Data\source\player\M2\动作\M2b02yd游泳向前游泳.tani
+256	4	1			1	Data\source\player\M2\动作\M2b02yd游泳向后游泳.tani
+257	4	1			1	Data\source\player\M2\动作\M2b02yd游泳左侧游泳.tani
+258	4	1			1	Data\source\player\M2\动作\M2b02yd游泳右侧游泳.tani
+259	29				1	Data\source\player\M2\动作\M2bqg猛冲01.tani
+260	29				1	Data\source\player\M2\动作\M2bqg左侧闪02.tani
+261	29				1	Data\source\player\M2\动作\M2bqg右侧闪02.tani
+262	30				0	Data\source\player\M2\动作\M2b02yd小跳c.tani
+263	30				0	Data\source\player\M2\动作\M2b02yd小跳c.tani
+264	29				1	Data\source\player\M2\动作\M2bqg疾退01.tani
+265	29				1	Data\source\player\M2\动作\M2bqg猛冲01.tani
+266	30				0	Data\source\player\M2\动作\M2bqg冲刺缓冲01.ani
+267	16				0	Data\source\player\M2\动作\M2bqg水上漂a.tani
+268	30				0	Data\source\player\M2\动作\M2bqg疾退缓冲01.tani
+270	7	1			0	Data\source\player\M2\动作\M2b03ty拔武器01a.ani
+271	7	2			0	Data\source\player\M2\动作\M2b03ty拔武器01b.tani
+272	7	1			0	Data\source\player\M2\动作\M2b05ty拔武器02a.ani
+273	7	2			0	Data\source\player\M2\动作\M2b05ty拔武器02b.tani
+277	16				0	data\source\player\M2\动作\M2bqg扶摇直上01.tani
+278	17				1	data\source\player\M2\动作\M2scy03轻功b.ani
+279	18				0	data\source\player\M2\动作\M2scy03轻功c.tani
+280	2	2			1	Data\source\player\M2\动作\M2b03cy战斗待机.ani
+281	44	2			0	Data\source\player\M2\动作\M2b01bi闪避.tani
+285	29				0	Data\source\player\M2\动作\M2b02zd击退.ani
+287	29				0	Data\source\player\M2\动作\M2b02zd停滑.ani
+288	30		0.7		0	Data\source\player\M2\动作\M2b01ty普通待机01.ani
+289	22				0	Data\source\player\M2\动作\M2b02zd倒地.ani
+291	45				1	Data\source\player\M2\动作\M2b02zd倒地中.ani
+292	46		0.7		0	Data\source\player\M2\动作\M2b02zd倒地中被击.ani
+301	12	2			0	data\source\player\M2\动作\M2b01bi攻击14.tani
+302	12	2			0	data\source\player\M2\动作\M2b01bi攻击15.tani
+303	12	2			0	data\source\player\M2\动作\M2b01bi攻击16.tani
+304	12	2			0	data\source\player\M2\动作\M2b01qt攻击04.tani
+305	12	2			0	data\source\player\M2\动作\M2b01qt攻击05.tani
+306	13	2			0	data\source\player\M2\动作\M2b01qt攻击06.tani
+307	14	2			0	data\source\player\M2\动作\M2swh01辅助技能01-01.tani
+308	14	2			0	data\source\player\M2\动作\M2swh01辅助技能01-02.tani
+309	14	2			0	data\source\player\M2\动作\M2swh01辅助技能01-03.tani
+310	14	2			0	data\source\player\M2\动作\M2swh01辅助技能02.tani
+311	14	2			0	data\source\player\M2\动作\M2swh01辅助技能03.tani
+312	14	2			0	data\source\player\M2\动作\M2swh01辅助技能01-04.tani
+313	14	2			0	data\source\player\M2\动作\M2swh01辅助技能04.tani
+314	14	2			0	data\source\player\M2\动作\M2swh01针灸01.tani
+315	14	2			0	data\source\player\M2\动作\M2swh01针灸02.tani
+316	14	2			0	data\source\player\M2\动作\M2swh01针灸03-01.tani
+317	14	2			0	data\source\player\M2\动作\M2swh01针灸04.tani
+318	14	2			0	data\source\player\M2\动作\M2swh01针灸05-01.tani
+319	14	2			0	data\source\player\M2\动作\M2swh01针灸03-02.tani
+320	14	2			0	data\source\player\M2\动作\M2swh01针灸06.tani
+321	14	2			0	data\source\player\M2\动作\M2swh01针灸05-02.tani
+322	14	2			0	data\source\player\M2\动作\M2swh01点穴01.tani
+323	14	2			0	data\source\player\M2\动作\M2swh01点穴02.tani
+324	14	2			0	data\source\player\M2\动作\M2swh01点穴03.tani
+325	14	2			0	data\source\player\M2\动作\M2swh01点穴04.tani
+326	14	2			0	data\source\player\M2\动作\M2swh01点穴05.tani
+327	14	2			0	data\source\player\M2\动作\M2swh01点穴06.tani
+328	15	2			0	data\source\player\M2\动作\M2swh01拂穴01.tani
+329	14	2			0	data\source\player\M2\动作\M2swh01拂穴02.tani
+330	14	2			0	data\source\player\M2\动作\M2swh01拂穴03.tani
+331	15	2			0	data\source\player\M2\动作\M2swh01拂穴04.tani
+332	15	2			0	data\source\player\M2\动作\M2swh01拂穴05.tani
+333	11	2			1	data\source\player\M2\动作\M2swh01蓄力01-01.tani
+334	11	2			1	data\source\player\M2\动作\M2swh01蓄力01-02.tani
+335	11	2			1	data\source\player\M2\动作\M2swh01蓄力01-03.tani
+336	11	2			1	data\source\player\M2\动作\M2swh01蓄力02-01.tani
+337	11	2			1	data\source\player\M2\动作\M2swh01蓄力02-02.tani
+338	11	2			1	data\source\player\M2\动作\M2swh01蓄力02-03.tani
+339	11	2			1	data\source\player\M2\动作\M2swh01蓄力03-01.tani
+340	11	2			1	data\source\player\M2\动作\M2swh01蓄力02-04.tani
+341	11	2			1	data\source\player\M2\动作\M2swh01蓄力02-05.tani
+342	11	2			1	data\source\player\M2\动作\M2swh01蓄力04-01.tani
+343	11	2			1	data\source\player\M2\动作\M2swh01蓄力04-02.tani
+344	11	2			1	data\source\player\M2\动作\M2swh01蓄力04-03.tani
+345	11	2			1	data\source\player\M2\动作\M2swh01蓄力06-01.tani
+346	11	2			1	data\source\player\M2\动作\M2swh01蓄力06-02.tani
+347	29				1	data\source\player\M2\动作\M2swh01点穴07.tani
+348	30				0	data\source\player\M2\动作\M2bqg缓冲03.tani
+450	14	2			0	data\source\player\M2\动作\M2stc04枪攻击01-陆战.tani
+451	14	2			0	data\source\player\M2\动作\M2stc04枪攻击01-陆战.tani
+453	14	2			0	data\source\player\M2\动作\M2stc04枪攻击02-陆战.tani
+454	15	2			0	data\source\player\M2\动作\M2stc04枪攻击03-陆战.tani
+455	15	2			0	data\source\player\M2\动作\M2stc04枪攻击04.tani
+456	15	2			0	data\source\player\M2\动作\M2stc04枪攻击05-冲刺.ani
+457	15	2			0	data\source\player\M2\动作\M2stc04枪攻击05-攻击.tani
+458	15	2			0	data\source\player\M2\动作\M2stc04枪攻击10.tani
+459	15	2			0	data\source\player\M2\动作\M2stc04枪攻击09.tani
+460	14	2			0	data\source\player\M2\动作\M2stc04技能02-01.tani
+461	14	2			0	data\source\player\M2\动作\M2stc04技能01-05.tani
+462	14	2			0	data\source\player\M2\动作\M2stc04技能01-02.tani
+463	14	2			0	data\source\player\M2\动作\M2stc04技能01-03.tani
+464	14	2			0	data\source\player\M2\动作\M2stc04技能01-04.tani
+465	14	2			0	data\source\player\M2\动作\M2stc04技能01-01.tani
+466	15	2			0	data\source\player\M2\动作\M2stc04枪攻击08.tani
+467	14	2			0	data\source\player\M2\动作\M2stc04枪攻击07.tani
+472	14	2			0	data\source\player\M2\动作\M2stc04枪攻击13-陆战.tani
+473	14	2			0	data\source\player\M2\动作\M2stc04枪攻击21-陆战.tani
+474	14	2			0	data\source\player\M2\动作\M2stc04枪攻击15.tani
+475	14	2			0	data\source\player\M2\动作\M2stc04枪攻击16.tani
+477	14	1			0	data\source\player\M2\动作\M2stc04技能03.tani
+478	29	2			1	data\source\player\M2\动作\M2stc04枪攻击18.tani
+480	11	1			1	data\source\player\M2\动作\M2stc04蓄力01-陆战.ani
+481	14	1			0	data\source\player\M2\动作\M2stc04枪攻击20-陆战.ani
+482	14	2			0	data\source\player\M2\动作\M2stc04枪攻击21-陆战.ani
+500	14	1			0	data\source\player\M2\动作\M2ssl04技能01.tani
+501	14	1			0	data\source\player\M2\动作\M2ssl04技能02-01.tani
+502	14	1			0	data\source\player\M2\动作\M2ssl04技能02-02.tani
+503	14	1			0	data\source\player\M2\动作\M2ssl04技能02-03.tani
+504	14	1			0	data\source\player\M2\动作\M2ssl04技能02-04.tani
+505	14	1			0	data\source\player\M2\动作\M2ssl04技能02-05.tani
+506	14	1			0	data\source\player\M2\动作\M2ssl04技能02-06.tani
+507	14	1			0	data\source\player\M2\动作\M2ssl04技能02-07.tani
+508	14	1			0	data\source\player\M2\动作\M2ssl04技能03.tani
+509	15	1			0	data\source\player\M2\动作\M2ssl04技能04.tani
+510	14	1			0	data\source\player\M2\动作\M2ssl04技能05.tani
+511	14	1			0	data\source\player\M2\动作\M2ssl04技能06.tani
+512	14	1			0	data\source\player\M2\动作\M2ssl04吟唱12.tani
+513	15	2			0	data\source\player\M2\动作\M2ssl04棍攻击02.tani
+514	15	2			0	data\source\player\M2\动作\M2ssl04棍攻击01.tani
+515	15	2			0	data\source\player\M2\动作\M2ssl04棍攻击03-01.tani
+516	15	2			0	data\source\player\M2\动作\M2ssl04棍攻击03-02.tani
+517	15	2			0	data\source\player\M2\动作\M2ssl04棍攻击04.tani
+518	15	2			0	data\source\player\M2\动作\M2ssl04棍攻击05.tani
+519	14	2			0	data\source\player\M2\动作\M2ssl04棍攻击06.tani
+520	14	1			0	data\source\player\M2\动作\M2ssl04爪攻击01.tani
+521	14	1			0	data\source\player\M2\动作\M2ssl04爪攻击02.tani
+522	14	1			0	data\source\player\M2\动作\M2ssl04爪攻击03.tani
+523	14	1			0	data\source\player\M2\动作\M2ssl04爪攻击04.tani
+524	11	1			1	data\source\player\M2\动作\M2ssl04爪攻击05-吟唱.tani
+525	14	1			0	data\source\player\M2\动作\M2ssl04爪攻击05-攻击.tani
+526	14	1			0	data\source\player\M2\动作\M2ssl04爪攻击06.tani
+527	14	1			0	data\source\player\M2\动作\M2ssl04袈裟攻击01.tani
+528	14	1			0	data\source\player\M2\动作\M2ssl04袈裟攻击02.tani
+529	14	1			0	data\source\player\M2\动作\M2ssl04袈裟攻击03.tani
+530	14	1			0	data\source\player\M2\动作\M2ssl04袈裟攻击04.tani
+531	14	1			0	data\source\player\M2\动作\M2ssl04袈裟攻击05.tani
+532	14	1			0	data\source\player\M2\动作\M2ssl04袈裟攻击06.tani
+533	14	1			0	data\source\player\M2\动作\M2ssl04技能02-08.tani
+534	17	1			1	data\source\player\M2\动作\M2ssl04轻功01.ani
+535	13	1			0	data\source\player\M2\动作\M2ssl04轻功01缓冲.tani
+536	7	1			0	Data\source\player\M2\动作\M2b04ty拔武器02a.ani
+537	7	2			0	Data\source\player\M2\动作\M2b04ty拔武器02b.tani
+538	20	1			1	data\source\player\M2\动作\M2ssl04轻功01.ani
+600	14	2			0	data\source\player\M2\动作\M2scy03技能03-01.tani
+601	14	2			0	data\source\player\M2\动作\M2scy03技能01-01.tani
+602	14	2			0	data\source\player\M2\动作\M2scy03气攻击01-01.tani
+603	14	2			0	data\source\player\M2\动作\M2scy03纯阳技能10-01.tani
+604	14	2			0	data\source\player\M2\动作\M2scy03剑攻击02-01.tani
+605	14	2			0	data\source\player\M2\动作\M2scy03纯阳技能02.tani
+606	14	2			0	data\source\player\M2\动作\M2scy03纯阳技能09-01.tani
+607	14	2			0	data\source\player\M2\动作\M2scy03纯阳技能11.tani
+608	14	2			0	data\source\player\M2\动作\M2scy03技能02-01.tani
+609	14	2			0	data\source\player\M2\动作\M2scy03纯阳技能21.tani
+610	15	2			0	data\source\player\M2\动作\M2scy03纯阳技能18.tani
+611	14	2			0	data\source\player\M2\动作\M2scy03剑攻击02-02.tani
+612	11	2			1	data\source\player\M2\动作\M2scy03聚气01-01.tani
+613	14	2			0	data\source\player\M2\动作\M2scy03剑攻击01.tani
+614	14	2			0	data\source\player\M2\动作\M2scy03纯阳技能09-02.tani
+615	11	2			1	data\source\player\M2\动作\M2scy03纯阳技能20.tani
+616	11	2			1	data\source\player\M2\动作\M2scy03聚气01-02.tani
+617	14	2			0	data\source\player\M2\动作\M2scy03纯阳技能17.tani
+618	14	2			0	data\source\player\M2\动作\M2scy03纯阳技能10-02.tani
+619	11	2			1	data\source\player\M2\动作\M2scy03聚气01-03.tani
+620	14	2			0	data\source\player\M2\动作\M2scy03气攻击01-02.tani
+621	11	2			1	data\source\player\M2\动作\M2scy03聚气01-04.tani
+622	14	2			0	data\source\player\M2\动作\M2scy03技能05-01.tani
+623	11	2			1	data\source\player\M2\动作\M2scy03聚气01-05.tani
+624	14	2			0	data\source\player\M2\动作\M2scy03技能05-02.tani
+625	11	2			1	data\source\player\M2\动作\M2scy03聚气01-06.tani
+626	14	2			0	data\source\player\M2\动作\M2scy03技能05-03.tani
+627	11	2			1	data\source\player\M2\动作\M2scy03聚气01-07.tani
+628	14	2			0	data\source\player\M2\动作\M2scy03技能05-04.tani
+629	11	2			1	data\source\player\M2\动作\M2scy03聚气01-08.tani
+630	14	2			0	data\source\player\M2\动作\M2scy03技能05-05.tani
+631	11	2			1	data\source\player\M2\动作\M2scy03聚气01-09.tani
+632	14	2			0	data\source\player\M2\动作\M2scy03技能05-06.tani
+633	11	2			1	data\source\player\M2\动作\M2scy03聚气01-10.tani
+634	14	2			0	data\source\player\M2\动作\M2scy03技能05-07.tani
+635	14	2			0	data\source\player\M2\动作\M2scy03气攻击01-05.tani
+636	14	2			0	data\source\player\M2\动作\M2scy03气攻击01-06.tani
+637	11	2			1	data\source\player\M2\动作\M2scy03聚气01-11.tani
+638	14	2			0	data\source\player\M2\动作\M2scy03技能02-03.tani
+639	14	2			0	data\source\player\M2\动作\M2scy03技能05-08.tani
+640	14	2			0	data\source\player\M2\动作\M2scy03气攻击01-07.tani
+641	14	2			0	data\source\player\M2\动作\M2scy03技能05-09.tani
+642	14	2			0	data\source\player\M2\动作\M2scy03技能02-04.tani
+643	14	2			0	data\source\player\M2\动作\M2scy03技能02-05.tani
+644	14	2			0	data\source\player\M2\动作\M2scy03技能04-04.tani
+645	16				0	data\source\player\M2\动作\M2scy03轻功a.tani
+646	17				1	data\source\player\M2\动作\M2scy03轻功b.ani
+647	18				0	data\source\player\M2\动作\M2scy03轻功c.tani
+648	15	2			0	data\source\player\M2\动作\M2scy03纯阳技能22.tani
+900	11	1			1	Data\source\player\M2\动作\M2s06sh采矿01.tani
+901	11	1			1	Data\source\player\M2\动作\M2s06sh采药01.tani
+902	14	1			0	Data\source\player\M2\动作\M2s06sh喝药01.tani
+903	11	1			1	Data\source\player\M2\动作\M2s06sh铸造01.tani
+904	11	1			1	Data\source\player\M2\动作\M2s06sh缝纫01.tani
+905	11	1			1	Data\source\player\M2\动作\M2s06sh割皮01.tani
+906	11	1			1	Data\source\player\M2\动作\M2s06sh烹饪01.tani
+907	11	1			0	Data\source\player\M2\动作\M2s06sh请客01.tani
+908	11	1			1	Data\source\player\M2\动作\M2s06sh送礼01.tani
+909	11	1			1	Data\source\player\M2\动作\M2s06sh搜索01.ani
+910	8	1			0	Data\source\player\M2\动作\M2b02dj拾取b.ani
+911	31	1			1	Data\source\player\M2\动作\M2b02dj吃碗.tani
+912	11	1			1	Data\source\player\M2\动作\M2s06sh摆摊01.ani
+913	11	1			1	Data\source\player\M2\动作\M2s06sh采矿01.tani
+920	14	1			0	Data\source\player\M2\动作\M2s06sh采矿01-01.tani
+921	11	2			1	Data\source\player\M2\动作\M2b03ty攻击01.tani
+922	31	1			1	Data\source\player\M2\动作\M2b02dj猜拳预备01.ani
+923	31	1			0	Data\source\player\M2\动作\M2b02dj猜拳布01.ani
+924	31	1			0	Data\source\player\M2\动作\M2b02dj猜拳剪刀01.ani
+925	31	1			0	Data\source\player\M2\动作\M2b02dj猜拳拳头01.ani
+926	11	1			1	Data\source\player\M2\动作\M2s06sh采矿01-01.tani
+927	31	1			1	Data\source\player\M2\动作\M2b02dj如来神掌.ani
+928	26	1			0	Data\source\player\M2\动作\M2b02dj睡觉a.tani
+929	47	1			1	Data\source\player\M2\动作\M2b02dj睡觉b.tani
+930	28	1			0	Data\source\player\M2\动作\M2b02dj睡觉c.tani
+931	31	1			1	Data\source\player\M2\动作\M2b02dj吹笛子01.tani
+932	31	1			0	Data\source\player\M2\动作\M2b02dj站立引导b.ani
+933	31	1			0	Data\source\player\M2\动作\M2s06sh搜索01.ani
+934	11	1			1	Data\source\player\M2\动作\M2s06sh抄录01.tani
+935	31	1			0	Data\source\player\M2\动作\M2b02dj表白.tani
+936	31	1			0	Data\source\player\M2\动作\M2b02dj惩罚.ani
+937	31	1			0	Data\source\player\M2\动作\M2b02dj调戏.tani
+938	31	1			0	Data\source\player\M2\动作\M2b02dj耳光.tani
+939	31	1			0	Data\source\player\M2\动作\M2b02dj高兴.tani
+940	31	1			0	Data\source\player\M2\动作\M2b02dj害羞.ani
+941	31	1			0	Data\source\player\M2\动作\M2b02dj口哨.tani
+942	31	1			0	Data\source\player\M2\动作\M2b02dj亲吻.tani
+943	26	1			0	Data\source\player\M2\动作\M2b02dj圈圈a.ani
+944	47	1			1	Data\source\player\M2\动作\M2b02dj圈圈b.ani
+945	28	1			0	Data\source\player\M2\动作\M2b02dj圈圈c.ani
+946	31	1			0	Data\source\player\M2\动作\M2b02dj撒娇.tani
+947	31	1			0	Data\source\player\M2\动作\M2b02dj生气.tani
+948	31	1			0	Data\source\player\M2\动作\M2b02dj思考.tani
+949	31	1			0	Data\source\player\M2\动作\M2b02dj踢.tani
+950	31	1			0	Data\source\player\M2\动作\M2b02dj挑衅.tani
+951	31	1			0	Data\source\player\M2\动作\M2b02dj上香.tani
+952	11	1			1	Data\source\player\M2\动作\M2b02dj烟花01.tani
+953	11	1			0	Data\source\player\M2\动作\M2b02dj吃月饼.tani
+1000	11	1			1	Data\source\player\M2\动作\M2scy03自绝经脉01.tani
+1001	15	1			0	Data\source\player\M2\动作\M2scy03自绝经脉02.tani
+1002	31	1			1	data\source\player\M2\动作\M2b01qt攻击01.tani
+1003	14	1			0	Data\source\player\M2\动作\M2b02ty阵法01.tani
+1004	14	1			0	Data\source\player\M2\动作\M2b02ty战场自爆.tani
+1005	12	1			0	Data\source\player\M2\动作\M2b02dj甩鞭01.tani
+1006	12	1			0	Data\source\player\M2\动作\M2b02dj扔馒头01.tani
+1007	24	1			0	Data\source\player\M2\动作\M2b02dj传功a.tani
+1008	24	1			1	Data\source\player\M2\动作\M2b02dj传功b.tani
+1009	29	1			1	Data\source\player\M2\动作\M2b02dj醉酒01.ani
+1010	14	1			0	Data\source\player\M2\动作\M2b02ty阵法02.tani
+1011	14	2			0	Data\source\player\M2\动作\M2stc04技能01演武.tani
+1012	14	2			0	Data\source\player\M2\动作\M2scy03技能05-09演武.tani
+1013	14	2			0	Data\source\player\M2\动作\M2swh01点穴04演武.tani
+1014	14	2			0	Data\source\player\M2\动作\M2ssl04棍攻击03-02演武.tani
+1020	5				1	Data\source\player\M2\动作\M2b02yd奔跑.tani
+1021	5				1	Data\source\player\M2\动作\M2b02yd奔跑.tani
+1022	5				1	Data\source\player\M2\动作\M2b04ty奔跑.tani
+1023	5				1	Data\source\player\M2\动作\M2b04ty奔跑.tani
+1024	5				1	Data\source\player\M2\动作\M2b03ty奔跑.tani
+1025	5				1	Data\source\player\M2\动作\M2b05ty奔跑.tani
+1026	5				1	Data\source\player\M2\动作\M2b02yd奔跑.tani
+1032	12	1			0	Data\source\player\M2\动作\M2b01aq攻击24.ani
+1050	29				1	Data\source\player\M2\动作\M2b01bi持武器普通待机01.ani
+1051	30				0	Data\source\player\M2\动作\M2b01bi持武器普通待机01a.ani
+1204	16				0	Data\source\player\M2\动作\M2b02yd小跳a.tani
+1205	17				1	Data\source\player\M2\动作\M2b02yd小跳b.ani
+1206	18				0	Data\source\player\M2\动作\M2b02yd小跳c.tani
+1224	19				0	Data\source\player\M2\动作\M2b02yd二段跳a.tani
+1225	20				1	Data\source\player\M2\动作\M2b02yd小跳b.ani
+1226	21				0	Data\source\player\M2\动作\M2b02yd小跳c.tani
+1260	18				1	Data\source\player\M2\动作\M2b02yd向后下滑.ani
+1261	18				1	Data\source\player\M2\动作\M2b02yd向前下滑.ani
+1262	17				1	Data\source\player\M2\动作\M2b02yd握拳小跳b.ani
+1263	17				1	Data\source\player\M2\动作\M2b02yd握拳小跳b.ani
+1300	24	1			1	Data\source\player\M2\动作\M2b02dj传功02.tani
+1301	12	1			0	Data\source\player\M2\动作\M2b02dj扔馒头02.tani
+1302	1	1			1	Data\source\player\M2\动作\M2b02yd持灯笼待机.ani
+1303	5	1			1	Data\source\player\M2\动作\M2b02yd持灯笼行走.ani
+1304	5	1			1	Data\source\player\M2\动作\M2b02yd持灯笼奔跑.ani
+1305	5	1			1	Data\source\player\M2\动作\M2b02yd持灯笼后退01.ani
+1306	5	1			1	Data\source\player\M2\动作\M2b02yd持灯笼后退02.ani
+1307	31	1			0	Data\source\player\M2\动作\M2b02dj吃月饼.tani
+1308	31	1			1	Data\source\player\M2\动作\M2b02dj如来神掌_喷火.tani
+10000	1				1	data\source\player\M2\动作\M2H普通待机01.ani
+10009	5				1	data\source\player\M2\动作\M2H行走01.ani
+10016	5				1	data\source\player\M2\动作\M2H空手奔跑01.ani
+10017	5	2			1	data\source\player\M2\动作\M2H奔跑03.ani
+10018	5	2			1	data\source\player\M2\动作\M2H奔跑03.ani
+10019	5	2			1	data\source\player\M2\动作\M2H奔跑03.ani
+10020	5	2			1	data\source\player\M2\动作\M2H奔跑03.ani
+10021	5	1			1	data\source\player\M2\动作\M2H奔跑03.ani
+10023	5				1	data\source\player\M2\动作\M2H后退01.ani
+10030	1	1			1	data\source\player\M2\动作\M2H普通待机01.ani
+10031	1	2			1	data\source\player\M2\动作\M2H普通待机02.ani
+10032	1	2			1	data\source\player\M2\动作\M2H普通待机02.ani
+10033	1	2			1	data\source\player\M2\动作\M2H普通待机02.ani
+10034	1	2			1	data\source\player\M2\动作\M2H普通待机02.ani
+10035	1	2			1	data\source\player\M2\动作\M2H普通待机02.ani
+10036	1	2			1	data\source\player\M2\动作\M2H普通待机02.ani
+10037	1	2			1	data\source\player\M2\动作\M2H普通待机02.ani
+10038	1	2			1	data\source\player\M2\动作\M2H普通待机02.ani
+10039	1	2			1	data\source\player\M2\动作\M2H普通待机02.ani
+10040	1	1			1	data\source\player\M2\动作\M2H普通待机01.ani
+10041	1	1			1	data\source\player\M2\动作\M2H普通待机01.ani
+10042	1	1			1	data\source\player\M2\动作\M2H普通待机01.ani
+10043	1	1			1	data\source\player\M2\动作\M2H普通待机01.ani
+10047	1	2			1	data\source\player\M2\动作\M2H战斗待机01.ani
+10057	32	2			0	Data\source\player\M2\动作\M2b04qi攻击01-骑乘.tani
+10058	32	2			0	Data\source\player\M2\动作\M2b04qi攻击02-骑乘.tani
+10059	32	2			0	Data\source\player\M2\动作\M2b04qi攻击01-骑乘.tani
+10073	34	2	0.7		0	Data\source\player\M2\动作\M2b01ty被击01.tani
+10074	34	2	0.7		0	Data\source\player\M2\动作\M2b03ty被击01.tani
+10075	34	2	0.7		0	Data\source\player\M2\动作\M2b04ty被击01.tani
+10076	34	2	0.7		0	Data\source\player\M2\动作\M2b05ty被击01.tani
+10077	34	2	0.7		0	Data\source\player\M2\动作\M2b01bi被击01.tani
+10078	34	2	0.7		0	Data\source\player\M2\动作\M2b01ty被击01.tani
+10079	34	2	0.7		0	Data\source\player\M2\动作\M2b01ty被击01.tani
+10080	41	1			1	Data\source\player\M2\动作\M2b02zd眩晕.tani
+10084	34	2			0	Data\source\player\M2\动作\M2b01bi格挡.tani
+10085	34	2			0	Data\source\player\M2\动作\M2b01qt格挡.tani
+10086	34	2			0	Data\source\player\M2\动作\M2b03ty格挡.tani
+10087	34	2			0	Data\source\player\M2\动作\M2b04ty格挡.tani
+10088	34	2			0	Data\source\player\M2\动作\M2b05ty格挡.tani
+10090	5				1	data\source\player\M2\动作\M2H后退01.ani
+10102	35	2			0	Data\source\player\M2\动作\M2H拾取01.ani
+10112	41	1			1	Data\source\player\M2\动作\M2b02dj站立引导b.ani
+10150	40	1			0	Data\source\player\M2\动作\M2b02dj拱手.ani
+10151	40	1			0	Data\source\player\M2\动作\M2b02dj鼓掌.tani
+10152	40	1			0	Data\source\player\M2\动作\M2b02dj哭.tani
+10153	40	1			0	Data\source\player\M2\动作\M2b02dj笑.tani
+10154	40	1			0	Data\source\player\M2\动作\M2b02dj说话.tani
+10164	41	1			0	Data\source\player\M2\动作\M2s06sh摆摊01.ani
+10165	40	1			0	Data\source\player\M2\动作\M2b02dj吃.tani
+10166	40	1			0	Data\source\player\M2\动作\M2b02dj喝.tani
+10167	1				1	data\source\player\M2\动作\M2H普通待机01.ani
+10168	1				1	data\source\player\M2\动作\M2H普通待机01.ani
+10169	1				1	data\source\player\M2\动作\M2H普通待机01.ani
+10170	40	1			0	Data\source\player\M2\动作\M2b02dj点头.tani
+10171	40	1			0	Data\source\player\M2\动作\M2b02dj摇头.tani
+10172	40	1			0	Data\source\player\M2\动作\M2b02dj振臂.tani
+10173	40	1			0	Data\source\player\M2\动作\M2b02dj苦恼.tani
+10174	41	1			0	Data\source\player\M2\动作\M2s06sh请客01.tani
+10175	1				1	data\source\player\M2\动作\M2H普通待机01.ani
+10176	1				1	data\source\player\M2\动作\M2H普通待机01.ani
+10177	1				1	data\source\player\M2\动作\M2H普通待机01.ani
+10200	35	2			0	Data\source\player\M2\动作\M2H拾取01.ani
+10201	36	2			0	Data\source\player\M2\动作\M2H拾取03.ani
+10202	6				1	data\source\player\M2\动作\M2H挪步左.ani
+10203	6				1	data\source\player\M2\动作\M2H挪步右.ani
+10204	16				0	data\source\player\M2\动作\M2H小跳a.ani
+10205	17				1	data\source\player\M2\动作\M2H小跳b.ani
+10206	18				0	data\source\player\M2\动作\M2H小跳c.ani
+10210	41	1			0	Data\source\player\M2\动作\M2b04ty拔武器01a.ani
+10211	41	2			0	Data\source\player\M2\动作\M2b04ty拔武器01b.tani
+10212	41	1			0	Data\source\player\M2\动作\M2b03ty拔武器02a.ani
+10213	41	2			0	Data\source\player\M2\动作\M2b03ty拔武器02b.tani
+10214	41	1			0	Data\source\player\M2\动作\M2b01qt拔武器03a.ani
+10215	41	2			0	Data\source\player\M2\动作\M2b01qt拔武器03b.ani
+10216	41	1			0	Data\source\player\M2\动作\M2b05ty拔武器01a.ani
+10217	41	2			0	Data\source\player\M2\动作\M2b05ty拔武器01b.tani
+10218	41	1			0	Data\source\player\M2\动作\M2b01bi拔武器01a.ani
+10219	41	2			0	Data\source\player\M2\动作\M2b01bi拔武器01b.tani
+10220	41	1			0	Data\source\player\M2\动作\M2b01qt拔武器02a.ani
+10221	41	2			0	Data\source\player\M2\动作\M2b01qt拔武器02b.ani
+10227	41	2			0	Data\source\player\M2\动作\M2b01bi插武器01a.tani
+10228	41	1			0	Data\source\player\M2\动作\M2b01bi插武器01b.ani
+10229	41	2			0	Data\source\player\M2\动作\M2b01qt插武器02a.ani
+10230	41	1			0	Data\source\player\M2\动作\M2b01qt插武器02b.ani
+10231	41	2			0	Data\source\player\M2\动作\M2b01qt插武器03a.ani
+10232	41	1			0	Data\source\player\M2\动作\M2b01qt插武器03b.ani
+10233	41	2			0	Data\source\player\M2\动作\M2b03ty插武器02a.tani
+10234	41	1			0	Data\source\player\M2\动作\M2b03ty插武器02b.ani
+10235	41	2			0	Data\source\player\M2\动作\M2b03ty插武器01a.tani
+10236	41	1			0	Data\source\player\M2\动作\M2b03ty插武器01b.ani
+10237	41	2			0	Data\source\player\M2\动作\M2b04ty插武器01a.tani
+10238	41	1			0	Data\source\player\M2\动作\M2b04ty插武器01b.ani
+10239	41	2			0	Data\source\player\M2\动作\M2b04ty插武器02a.tani
+10240	41	1			0	Data\source\player\M2\动作\M2b04ty插武器02b.ani
+10241	41	2			0	Data\source\player\M2\动作\M2b05ty插武器01a.tani
+10242	41	1			0	Data\source\player\M2\动作\M2b05ty插武器01b.ani
+10243	41	2			0	Data\source\player\M2\动作\M2b05ty插武器02a.tani
+10244	41	1			0	Data\source\player\M2\动作\M2b05ty插武器02b.ani
+10250	34	2			0	Data\source\player\M2\动作\M2b01ty闪避.tani
+10251	34	2			0	Data\source\player\M2\动作\M2b04ty闪避.tani
+10252	34	2			0	Data\source\player\M2\动作\M2b03ty闪避.tani
+10253	34	2			0	Data\source\player\M2\动作\M2b05ty闪避.tani
+10259	29				1	data\source\player\M2\动作\M2stc04骑乘攻击03.tani
+10260	29				1	data\source\player\M2\动作\M2stc04骑乘攻击03.tani
+10261	29				1	data\source\player\M2\动作\M2stc04骑乘攻击03.tani
+10262	30				0	data\source\player\M2\动作\M2H前冲缓冲01.ani
+10263	30				0	data\source\player\M2\动作\M2H前冲缓冲01.ani
+10266	30				0	data\source\player\M2\动作\M2H前冲缓冲01.ani
+10270	41	1			0	Data\source\player\M2\动作\M2b03ty拔武器01a.ani
+10271	41	2			0	Data\source\player\M2\动作\M2b03ty拔武器01b.ani
+10272	41	1			0	Data\source\player\M2\动作\M2b05ty拔武器02a.ani
+10273	41	2			0	Data\source\player\M2\动作\M2b05ty拔武器02b.ani
+10280	1				1	data\source\player\M2\动作\M2H普通待机02.ani
+10450	38	2			0	data\source\player\M2\动作\M2stc04枪攻击01-骑乘.tani
+10453	38	2			0	data\source\player\M2\动作\M2stc04枪攻击02-骑乘.tani
+10454	38	2			0	data\source\player\M2\动作\M2stc04枪攻击03-骑乘.tani
+10455	38	2			0	Data\source\player\M2\动作\M2stc04枪攻击04-骑乘.tani
+10460	38	2			0	data\source\player\M2\动作\M2stc04技能02-01.tani
+10461	38	2			0	data\source\player\M2\动作\M2stc04技能01-05.tani
+10462	38	2			0	data\source\player\M2\动作\M2stc04技能01-02.tani
+10463	38	2			0	data\source\player\M2\动作\M2stc04技能01-03.tani
+10464	38	2			0	data\source\player\M2\动作\M2stc04技能01-04.tani
+10465	38	2			0	data\source\player\M2\动作\M2stc04技能01-01.tani
+10466	38	2			0	data\source\player\M2\动作\M2stc04骑乘02.tani
+10467	39	2			0	data\source\player\M2\动作\M2stc04骑乘攻击01.tani
+10468	38	2			0	data\source\player\M2\动作\M2stc04骑乘攻击02.tani
+10470	42				0	data\source\player\M2\动作\M2H嘶叫01.ani
+10471	42	2			0	data\source\player\M2\动作\M2H嘶叫01.ani
+10472	38	2			0	Data\source\player\M2\动作\M2stc04枪攻击13-骑乘.tani
+10473	38	2			0	Data\source\player\M2\动作\M2stc04枪攻击21-骑乘.tani
+10476	38	2			0	Data\source\player\M2\动作\M2stc04枪攻击17-骑乘.tani
+10477	38	1			0	data\source\player\M2\动作\M2stc04技能03.tani
+10479	42	1			0	Data\source\player\M2\动作\M2H上马01.ani
+10480	11	1			1	data\source\player\M2\动作\M2stc04蓄力01-骑乘.ani
+10481	38	1			0	data\source\player\M2\动作\M2stc04枪攻击20-骑乘.ani
+10482	38	2			0	data\source\player\M2\动作\M2stc04枪攻击21-骑乘.ani
+10536	41	1			0	Data\source\player\M2\动作\M2b04ty拔武器02a.ani
+10537	41	2			0	Data\source\player\M2\动作\M2b04ty拔武器02b.tani
+10900	41	1			1	Data\source\player\M2\动作\M2s06sh采矿01.tani
+10901	35	2			0	Data\source\player\M2\动作\M2H拾取02.ani
+10902	41	1			0	Data\source\player\M2\动作\M2s06sh喝药01.tani
+10903	41	1			1	Data\source\player\M2\动作\M2s06sh铸造01.tani
+10904	41	1			1	Data\source\player\M2\动作\M2s06sh缝纫01.tani
+10905	35	2			0	Data\source\player\M2\动作\M2H拾取02.ani
+10906	41	1			1	Data\source\player\M2\动作\M2s06sh烹饪01.tani
+10907	41	1			0	Data\source\player\M2\动作\M2s06sh请客01.tani
+10908	41	1			0	Data\source\player\M2\动作\M2s06sh送礼01.tani
+10909	35	2			0	Data\source\player\M2\动作\M2H拾取02.ani
+10910	35	2			0	Data\source\player\M2\动作\M2H拾取01.ani
+10911	41	1			1	Data\source\player\M2\动作\M2b02dj吃碗.tani
+10912	41	1			1	Data\source\player\M2\动作\M2s06sh摆摊01.ani
+10913	41	1			1	Data\source\player\M2\动作\M2s06sh采矿01.tani
+10920	41	1			1	Data\source\player\M2\动作\M2s06sh采矿01-01.tani
+10922	40	1			1	Data\source\player\M2\动作\M2b02dj猜拳预备01.ani
+10923	40	1			0	Data\source\player\M2\动作\M2b02dj猜拳布01.ani
+10924	40	1			0	Data\source\player\M2\动作\M2b02dj猜拳剪刀01.ani
+10925	40	1			0	Data\source\player\M2\动作\M2b02dj猜拳拳头01.ani
+10927	40	1			1	Data\source\player\M2\动作\M2b02dj如来神掌.ani
+10928	1				1	data\source\player\M2\动作\M2H普通待机01.ani
+10929	1				1	data\source\player\M2\动作\M2H普通待机01.ani
+10930	1				1	data\source\player\M2\动作\M2H普通待机01.ani
+10931	40	1			1	Data\source\player\M2\动作\M2b02dj吹笛子01.tani
+10934	41	1			1	Data\source\player\M2\动作\M2s06sh抄录01.tani
+10935	40	1			0	Data\source\player\M2\动作\M2b02dj表白.tani
+10936	40	1			0	Data\source\player\M2\动作\M2b02dj惩罚.ani
+10937	40	1			0	Data\source\player\M2\动作\M2b02dj调戏.tani
+10938	40	1			0	Data\source\player\M2\动作\M2b02dj耳光.tani
+10939	40	1			0	Data\source\player\M2\动作\M2b02dj高兴.tani
+10940	40	1			0	Data\source\player\M2\动作\M2b02dj害羞.ani
+10941	40	1			0	Data\source\player\M2\动作\M2b02dj口哨.tani
+10942	40	1			0	Data\source\player\M2\动作\M2b02dj亲吻.tani
+10943	1				1	data\source\player\M2\动作\M2H普通待机01.ani
+10944	1				1	data\source\player\M2\动作\M2H普通待机01.ani
+10945	1				1	data\source\player\M2\动作\M2H普通待机01.ani
+10946	40	1			0	Data\source\player\M2\动作\M2b02dj撒娇.tani
+10947	40	1			0	Data\source\player\M2\动作\M2b02dj生气.tani
+10948	40	1			0	Data\source\player\M2\动作\M2b02dj思考.tani
+10949	40	1			0	Data\source\player\M2\动作\M2b02dj踢.tani
+10950	40	1			0	Data\source\player\M2\动作\M2b02dj挑衅.tani
+10951	40	1			0	Data\source\player\M2\动作\M2b02dj上香.tani
+10953	40	1			0	Data\source\player\M2\动作\M2b02dj吃月饼.tani
+11003	38	1			0	Data\source\player\M2\动作\M2b02ty阵法01.tani
+11004	38	1			0	Data\source\player\M2\动作\M2b02ty战场自爆.tani
+11005	32	1			0	Data\source\player\M2\动作\M2b02dj甩鞭01.tani
+11006	32	1			0	Data\source\player\M2\动作\M2b02dj扔馒头01.tani
+11009	41	1			1	Data\source\player\M2\动作\M2b02dj醉酒01.ani
+11032	40	1			0	Data\source\player\M2\动作\M2b01aq攻击24.ani
+11302	1	1			1	Data\source\player\M2\动作\M2b02yd持灯笼待机.ani
+11303	5	1			1	Data\source\player\M2\动作\M2b02yd持灯笼行走.ani
+11304	5	1			1	Data\source\player\M2\动作\M2b02yd持灯笼奔跑.ani
+11305	5	1			1	Data\source\player\M2\动作\M2b02yd持灯笼后退01.ani
+11306	5	1			1	Data\source\player\M2\动作\M2b02yd持灯笼后退02.ani
+11307	40	1			0	Data\source\player\M2\动作\M2b02dj吃月饼.tani
+11308	40	1			1	Data\source\player\M2\动作\M2b02dj如来神掌_喷火.tani
