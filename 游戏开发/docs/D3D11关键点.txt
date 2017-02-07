@@ -1,0 +1,4 @@
+ConstantBuffer创建后更新 和 C++内设置SamplerState：
+	D3D11 Sample - Tutorial 07: Texture Mapping and Constant Buffers
+分别用D3DX11CreateTextureFromFile和CreateShaderResourceView来创建SRV：
+	D3D11 Document - How to: Initialize a Texture From a File
