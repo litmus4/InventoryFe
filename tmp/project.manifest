@@ -1,7 +1,7 @@
 {
 	"packageUrl" : "http://raw.githubusercontent.com/litmus4/InventoryFe/master/tmp/",
-	"remoteManifestUrl" : "http://raw.githubusercontent.com/litmus4/InventoryFe/master/tmp/res/project.manifest",
-	"remoteVersionUrl" : "http://raw.githubusercontent.com/litmus4/InventoryFe/master/tmp/res/version.manifest",
+	"remoteManifestUrl" : "http://raw.githubusercontent.com/litmus4/InventoryFe/master/tmp/project.manifest",
+	"remoteVersionUrl" : "http://raw.githubusercontent.com/litmus4/InventoryFe/master/tmp/version.manifest",
 	"version" : "0.1.0",
 	"engineVersion" : "3.8.1",
 
