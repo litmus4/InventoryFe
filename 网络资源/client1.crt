@@ -1,0 +1,72 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+    Signature Algorithm: md5WithRSAEncryption
+        Issuer: C=CN, ST=BJ, L=BJ, O=None, OU=None, CN=vpn-ca/name=litmus4/emailAddress=litmus4@hotmail.com
+        Validity
+            Not Before: Jan 31 06:20:38 2015 GMT
+            Not After : Jan 28 06:20:38 2025 GMT
+        Subject: C=CN, ST=BJ, L=BJ, O=None, OU=None, CN=vpa-ca/name=litmus4/emailAddress=litmus4@hotmail.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:e2:fc:fa:e8:91:e4:64:0b:27:10:88:ed:ab:25:
+                    cb:18:9a:5b:3e:5c:8a:b5:4a:59:e3:73:ad:9f:b5:
+                    40:53:b9:ab:f3:48:23:ea:8c:3d:e7:5b:fa:01:c4:
+                    9b:ed:0c:4f:38:0c:3c:34:0c:96:96:b3:67:9f:5f:
+                    70:a3:47:6d:24:19:c8:e3:3f:5b:65:c0:52:83:e2:
+                    5d:44:cf:22:ed:82:7d:b9:11:c5:a5:f3:1b:47:27:
+                    21:cf:ab:66:41:17:84:a0:29:d4:64:09:e3:db:8e:
+                    8f:68:e9:0f:f9:38:27:b6:3e:59:f5:64:05:0d:40:
+                    5f:45:f1:b7:7c:93:c0:ed:eb
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                FF:81:2B:5D:82:BA:DD:74:F4:17:CA:F8:01:05:3A:52:E6:CF:3D:B7
+            X509v3 Authority Key Identifier: 
+                keyid:F4:9E:44:CA:7A:E5:0C:AB:E1:9B:02:B0:26:CE:A2:53:9A:F0:7E:5E
+                DirName:/C=CN/ST=BJ/L=BJ/O=None/OU=None/CN=vpn-ca/name=litmus4/emailAddress=litmus4@hotmail.com
+                serial:E4:75:C4:BA:71:55:6E:B6
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: md5WithRSAEncryption
+         6f:9d:34:08:30:2e:5a:a2:5b:cf:03:5c:32:90:f8:fd:58:ba:
+         1f:68:f9:18:f5:0d:ae:da:cc:f1:8c:0b:a0:91:45:30:b3:ea:
+         a9:ad:58:3a:f2:40:52:7b:d8:fe:7a:1c:c5:18:cf:0a:8e:4a:
+         71:f5:49:21:db:57:0e:c1:ee:2e:b2:6d:f8:b5:e0:a6:5c:b0:
+         59:da:fe:6d:82:5a:4a:01:24:ab:0e:e8:ee:35:cb:ac:85:ce:
+         c6:bc:d5:52:63:17:6e:ba:79:1b:06:c8:09:e4:d8:56:4d:6d:
+         f2:c5:8a:d2:ad:22:4f:ad:e9:0f:07:31:c7:f9:d7:85:f7:2f:
+         c2:91
+-----BEGIN CERTIFICATE-----
+MIID1TCCAz6gAwIBAgIBAjANBgkqhkiG9w0BAQQFADCBjDELMAkGA1UEBhMCQ04x
+CzAJBgNVBAgTAkJKMQswCQYDVQQHEwJCSjENMAsGA1UEChMETm9uZTENMAsGA1UE
+CxMETm9uZTEPMA0GA1UEAxMGdnBuLWNhMRAwDgYDVQQpEwdsaXRtdXM0MSIwIAYJ
+KoZIhvcNAQkBFhNsaXRtdXM0QGhvdG1haWwuY29tMB4XDTE1MDEzMTA2MjAzOFoX
+DTI1MDEyODA2MjAzOFowgYwxCzAJBgNVBAYTAkNOMQswCQYDVQQIEwJCSjELMAkG
+A1UEBxMCQkoxDTALBgNVBAoTBE5vbmUxDTALBgNVBAsTBE5vbmUxDzANBgNVBAMT
+BnZwYS1jYTEQMA4GA1UEKRMHbGl0bXVzNDEiMCAGCSqGSIb3DQEJARYTbGl0bXVz
+NEBob3RtYWlsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA4vz66JHk
+ZAsnEIjtqyXLGJpbPlyKtUpZ43Otn7VAU7mr80gj6ow951v6AcSb7QxPOAw8NAyW
+lrNnn19wo0dtJBnI4z9bZcBSg+JdRM8i7YJ9uRHFpfMbRychz6tmQReEoCnUZAnj
+246PaOkP+Tgntj5Z9WQFDUBfRfG3fJPA7esCAwEAAaOCAUMwggE/MAkGA1UdEwQC
+MAAwLQYJYIZIAYb4QgENBCAWHkVhc3ktUlNBIEdlbmVyYXRlZCBDZXJ0aWZpY2F0
+ZTAdBgNVHQ4EFgQU/4ErXYK63XT0F8r4AQU6UubPPbcwgcEGA1UdIwSBuTCBtoAU
+9J5EynrlDKvhmwKwJs6iU5rwfl6hgZKkgY8wgYwxCzAJBgNVBAYTAkNOMQswCQYD
+VQQIEwJCSjELMAkGA1UEBxMCQkoxDTALBgNVBAoTBE5vbmUxDTALBgNVBAsTBE5v
+bmUxDzANBgNVBAMTBnZwbi1jYTEQMA4GA1UEKRMHbGl0bXVzNDEiMCAGCSqGSIb3
+DQEJARYTbGl0bXVzNEBob3RtYWlsLmNvbYIJAOR1xLpxVW62MBMGA1UdJQQMMAoG
+CCsGAQUFBwMCMAsGA1UdDwQEAwIHgDANBgkqhkiG9w0BAQQFAAOBgQBvnTQIMC5a
+olvPA1wykPj9WLofaPkY9Q2u2szxjAugkUUws+qprVg68kBSe9j+ehzFGM8Kjkpx
+9Ukh21cOwe4usm34teCmXLBZ2v5tglpKASSrDujuNcushc7GvNVSYxduunkbBsgJ
+5NhWTW3yxYrSrSJPrekPBzHH+deF9y/CkQ==
+-----END CERTIFICATE-----
