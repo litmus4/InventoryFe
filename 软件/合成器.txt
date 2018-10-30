@@ -1,0 +1,7 @@
+MASSIVE		减法	收费
+
+FB-3300		模拟	Free VST Plugins!>Top50Of2017>1
+PolyGAS		颗粒	Free VST Plugins!>Top50Of2017>2
+TAL-NoiseMaker	减法	Free VST Plugins!>Part3>Synthesizer(Subtractive/VA)>TAL-NoiseMaker
+Dexed		调频	Free VST Plugins!>Part3>Synthesizer(FM)>Dexed
+Eclipsis	波表	VST 4 FREE>SYNTHS>Seq/Arp

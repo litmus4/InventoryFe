@@ -1,0 +1,10 @@
+av32580829+			官网		破解版	教程
+人体模型：DAZ Studio		百度文章	-	B站收藏（ABOUTCG）
+服装：Marvelous Designer	Steam			B站收藏（ABOUTCG）
+CAD：FreeCAD			百度文章	-
+布线低模匹配/拓扑：R3DS Wrap	百度文章		B站收藏（ABOUTCG）
+贴图：Substance Painter		Steam			B站收藏+百度文章Substance学院
+材质/烘焙：Marmoset Toolbag	Steam
+材质2：Substance Designer	Steam			B站收藏+百度文章Substance学院
+
+其他：Blender			Steam		-	B站收藏+官方文档（选择中文后要在URL中把版本号改为"dev"）
