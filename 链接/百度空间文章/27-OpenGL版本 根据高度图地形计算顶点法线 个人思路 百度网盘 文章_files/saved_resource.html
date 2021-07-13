@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0157)https://wenzhang.bdstatic.com/page/content/?uid=1275475847&key=49992d080d8618f5-1426763513&is_share=0&expire=1626166787&sign=ee0af66f7b6e22a30a1efa4ea856df42 -->
+<html id="doc" class=" "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			
+		
+		<meta http-equiv="Content-Language" content="zh-cn">
+	
+	<title>  百度网盘 文章 </title>
+	
+        <meta content="百度网盘·收藏,书签,笔记" name="keywords">
+        <meta content="百度网盘·收藏可以帮您轻松收集网络中的图片、文章、网址。您可以随时随地浏览自己收藏的内容。" name="description">
+	
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://swenzhang.baidu.com/js/lib/jquery/1_9_1.js" src="./1_9_1.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lib/jh" src="./jh.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="kit/loadElm" src="./loadElm.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="kit/fitImageWidth" src="./fitImageWidth.js.下载"></script><!--<base href="http://1">--><base href=".">
+
+	
+		<link href="https://swenzhang.baidu.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link href="https://swenzhang.baidu.com/img/favicon.ico" rel="icon">
+	
+	
+		<link href="./global.css" type="text/css" rel="stylesheet" media="all">	
+	
+	<link href="./pcsArticle.css" type="text/css" rel="stylesheet" media="all">
+	<script>var __CONF__ = {};</script>
+	
+		<script src="./2_1_5.js.下载"></script>	
+	
+</head>
+<body id="" class=" ">
+	<!--[if IE ]>
+		<!--[if lt IE 7]><div class="page is-ie lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+		<!--[if IE 7]><div class="page is-ie lt-ie9 lt-ie8"><![endif]-->
+		<!--[if IE 8]><div class="page is-ie lt-ie9"><![endif]-->
+		<!--[if gt IE 8]><div class="page is-ie"><!--<![endif]-->
+	<!--<![endif]-->
+	<!--[if ! IE ]><!--><div class="page"><!--<![endif]-->
+	
+
+	
+
+	
+	
+
+	<div id="pcsArticle_ptkaiapt4bxy_baiduscarticle" class="pcs-article_ptkaiapt4bxy_baiduscarticle">
+
+		<div class="pcs-article-box_ptkaiapt4bxy_baiduscarticle"><h1 class="pcs-article-title_ptkaiapt4bxy_baiduscarticle" id="detailArticleTitle_ptkaiapt4bxy_baiduscarticle">OpenGL版本 根据高度图地形计算顶点法线 个人思路</h1><div class="pcs-article-c_ptkaiapt4bxy_baiduscarticle">
+		 			<div class="pcs-article-toos_ptkaiapt4bxy_baiduscarticle">
+				<div class="tags-list clearfix"><ul>
+				 					<li>空间</li>
+				 				</ul></div>
+				<div class="note"></div>
+			</div>
+		 			<div class="pcs-article-content_ptkaiapt4bxy_baiduscarticle" id="detailArticleContent_ptkaiapt4bxy_baiduscarticle"><p>#include "PxcFreeExpClassA.h"<br>using namespace std;</p><p>/**<br>* OpenGL版本 向量加法<br>*/<br>Pgc_Float3 *PxcFreeExpClassA::gVector3Add(Pgc_Float3 *pVecResult, Pgc_Float3 Vec1, Pgc_Float3 Vec2)<br>{<br>pVecResult-&gt;x = Vec1.x + Vec2.x;<br>pVecResult-&gt;y = Vec1.y + Vec2.y;<br>pVecResult-&gt;z = Vec1.z + Vec2.z;<br>return pVecResult;<br>}</p><p>/**<br>* OpenGL版本 向量减法<br>*/<br>Pgc_Float3 *PxcFreeExpClassA::gVector3Minus(Pgc_Float3 *pVecResult, Pgc_Float3 Vec1, Pgc_Float3 Vec2)<br>{<br>pVecResult-&gt;x = Vec1.x - Vec2.x;<br>pVecResult-&gt;y = Vec1.y - Vec2.y;<br>pVecResult-&gt;z = Vec1.z - Vec2.z;<br>return pVecResult;<br>}</p><p>/**<br>* OpenGL版本 向量乘法<br>*/<br>Pgc_Float3 *PxcFreeExpClassA::gVector3Cross(Pgc_Float3 *pVecResult, Pgc_Float3 Vec1, Pgc_Float3 Vec2)<br>{<br>pVecResult-&gt;x = Vec1.y * Vec2.z - Vec1.z * Vec2.y;<br>pVecResult-&gt;y = Vec1.z * Vec2.x - Vec1.x * Vec2.z;<br>pVecResult-&gt;z = Vec1.x * Vec2.y - Vec1.y * Vec2.x;<br>return pVecResult;<br>}</p><p>/**<br>* OpenGL版本 向量单位化<br>*/<br>Pgc_Float3 *PxcFreeExpClassA::gVector3Normalize(Pgc_Float3 *pVecResult, Pgc_Float3 Vec)<br>{<br>pVecResult-&gt;x = Vec.x / sqrt(Vec.x * Vec.x + Vec.y * Vec.y + Vec.z * Vec.z);<br>pVecResult-&gt;y = Vec.y / sqrt(Vec.x * Vec.x + Vec.y * Vec.y + Vec.z * Vec.z);<br>pVecResult-&gt;z = Vec.z / sqrt(Vec.x * Vec.x + Vec.y * Vec.y + Vec.z * Vec.z);<br>return pVecResult;<br>}</p><p>/**<br>* OpenGL版本 高度图地形顶点法线计算 无面法线存储<br>*/<br>bool PxcFreeExpClassA::gCalNormalFromHeight(PgcTerrain *pTerrain, int Id, Pgc_Float3 &amp;Normal)<br>{<br>int x, y; //地形坐标变量<br>UINT nTriangleMask; //顶点周围三角形蒙版<br>Pgc_Float3 Position, P1position, P2position, v1, v2; //用于计算面法线的中间变量<br>Pgc_ArroundSurfaceNorms SurfaceNorms; //周围面法线结构<br>Pgc_Float3 WeightingSN; //加权面法线变量</p><p>//初始化<br>Normal.x = Normal.y = Normal.z = 0.0f;<br>nTriangleMask = 63;<br>if(!pTerrain-&gt;Get3DCoor(Id, Position)) return false;<br>pTerrain-&gt;GetCoor(Id, x, y);<br>SurfaceNorms.Deno = 0;</p><p>//计算周围三角形蒙版<br>if(y == 0) nTriangleMask &amp;= 7;<br>if(y == pTerrain-&gt;Height() - 1) nTriangleMask &amp;= 56;<br>if(x == 0) nTriangleMask &amp;= 49;<br>if(x == pTerrain-&gt;Width() - 1) nTriangleMask &amp;= 14;</p><p>/**<br>* 周围三角形编号：<br>*<br>*&nbsp;&nbsp;&nbsp;  *----*----*<br>*&nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;  / |&nbsp;&nbsp;   / |<br>*&nbsp;&nbsp;&nbsp;  | / 2|1/0 |<br>*&nbsp;&nbsp;&nbsp;  *----*----*<br>*&nbsp;&nbsp;&nbsp;  | 3/4|5 / |<br>*&nbsp;&nbsp;&nbsp;  | /&nbsp;&nbsp;   | /&nbsp;&nbsp;  |<br>*&nbsp;&nbsp;&nbsp;  *----*----*<br>*/</p><p>//计算0号三角形面法线，并增加权重分母<br>if(nTriangleMask &amp; 32)<br>{<br>&nbsp;&nbsp;  if(!pTerrain-&gt;Get3DCoor(Id + 1, P1position)) return false;<br>&nbsp;&nbsp;  if(!pTerrain-&gt;Get3DCoor(Id - pTerrain-&gt;Width() + 1, P2position)) return false;<br>&nbsp;&nbsp;  gVector3Minus(&amp;v1, P1position, Position);<br>&nbsp;&nbsp;  gVector3Minus(&amp;v2, P2position, Position);<br>&nbsp;&nbsp;  gVector3Cross(&amp;SurfaceNorms.Norms[0], v1, v2);<br>&nbsp;&nbsp;  SurfaceNorms.Deno += 45;<br>}</p><p>//计算1号三角形面法线，并增加权重分母<br>if(nTriangleMask &amp; 16)<br>{<br>&nbsp;&nbsp;  if(!pTerrain-&gt;Get3DCoor(Id - pTerrain-&gt;Width() + 1, P1position)) return false;<br>&nbsp;&nbsp;  if(!pTerrain-&gt;Get3DCoor(Id - pTerrain-&gt;Width(), P2position)) return false;<br>&nbsp;&nbsp;  gVector3Minus(&amp;v1, P1position, Position);<br>&nbsp;&nbsp;  gVector3Minus(&amp;v2, P2position, Position);<br>&nbsp;&nbsp;  gVector3Cross(&amp;SurfaceNorms.Norms[1], v1, v2);<br>&nbsp;&nbsp;  SurfaceNorms.Deno += 45;<br>}</p><p>//计算2号三角形面法线，并增加权重分母<br>if(nTriangleMask &amp; 8)<br>{<br>&nbsp;&nbsp;  if(!pTerrain-&gt;Get3DCoor(Id - pTerrain-&gt;Width(), P1position)) return false;<br>&nbsp;&nbsp;  if(!pTerrain-&gt;Get3DCoor(Id - 1, P2position)) return false;<br>&nbsp;&nbsp;  gVector3Minus(&amp;v1, P1position, Position);<br>&nbsp;&nbsp;  gVector3Minus(&amp;v2, P2position, Position);<br>&nbsp;&nbsp;  gVector3Cross(&amp;SurfaceNorms.Norms[2], v1, v2);<br>&nbsp;&nbsp;  SurfaceNorms.Deno += 90;<br>}</p><p>//计算3号三角形面法线，并增加权重分母<br>if(nTriangleMask &amp; 4)<br>{<br>&nbsp;&nbsp;  if(!pTerrain-&gt;Get3DCoor(Id - 1, P1position)) return false;<br>&nbsp;&nbsp;  if(!pTerrain-&gt;Get3DCoor(Id + pTerrain-&gt;Width() - 1, P2position)) return false;<br>&nbsp;&nbsp;  gVector3Minus(&amp;v1, P1position, Position);<br>&nbsp;&nbsp;  gVector3Minus(&amp;v2, P2position, Position);<br>&nbsp;&nbsp;  gVector3Cross(&amp;SurfaceNorms.Norms[3], v1, v2);<br>&nbsp;&nbsp;  SurfaceNorms.Deno += 45;<br>}</p><p>//计算4号三角形面法线，并增加权重分母<br>if(nTriangleMask &amp; 2)<br>{<br>&nbsp;&nbsp;  if(!pTerrain-&gt;Get3DCoor(Id + pTerrain-&gt;Width() - 1, P1position)) return false;<br>&nbsp;&nbsp;  if(!pTerrain-&gt;Get3DCoor(Id + pTerrain-&gt;Width(), P2position)) return false;<br>&nbsp;&nbsp;  gVector3Minus(&amp;v1, P1position, Position);<br>&nbsp;&nbsp;  gVector3Minus(&amp;v2, P2position, Position);<br>&nbsp;&nbsp;  gVector3Cross(&amp;SurfaceNorms.Norms[4], v1, v2);<br>&nbsp;&nbsp;  SurfaceNorms.Deno += 45;<br>}</p><p>//计算5号三角形面法线，并增加权重分母<br>if(nTriangleMask &amp; 1)<br>{<br>&nbsp;&nbsp;  if(!pTerrain-&gt;Get3DCoor(Id + pTerrain-&gt;Width(), P1position)) return false;<br>&nbsp;&nbsp;  if(!pTerrain-&gt;Get3DCoor(Id + 1, P2position)) return false;<br>&nbsp;&nbsp;  gVector3Minus(&amp;v1, P1position, Position);<br>&nbsp;&nbsp;  gVector3Minus(&amp;v2, P2position, Position);<br>&nbsp;&nbsp;  gVector3Cross(&amp;SurfaceNorms.Norms[5], v1, v2);<br>&nbsp;&nbsp;  SurfaceNorms.Deno += 90;<br>}</p><p>//计算0号三角形加权面法线，并加入顶点法线变量<br>if(nTriangleMask &amp; 32)<br>{<br>&nbsp;&nbsp;  WeightingSN.x = SurfaceNorms.Norms[0].x * (45.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  WeightingSN.y = SurfaceNorms.Norms[0].y * (45.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  WeightingSN.z = SurfaceNorms.Norms[0].z * (45.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  gVector3Add(&amp;Normal, Normal, WeightingSN);<br>}</p><p>//计算1号三角形加权面法线，并加入顶点法线变量<br>if(nTriangleMask &amp; 16)<br>{<br>&nbsp;&nbsp;  WeightingSN.x = SurfaceNorms.Norms[1].x * (45.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  WeightingSN.y = SurfaceNorms.Norms[1].y * (45.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  WeightingSN.z = SurfaceNorms.Norms[1].z * (45.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  gVector3Add(&amp;Normal, Normal, WeightingSN);<br>}</p><p>//计算2号三角形加权面法线，并加入顶点法线变量<br>if(nTriangleMask &amp; 8)<br>{<br>&nbsp;&nbsp;  WeightingSN.x = SurfaceNorms.Norms[2].x * (90.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  WeightingSN.y = SurfaceNorms.Norms[2].y * (90.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  WeightingSN.z = SurfaceNorms.Norms[2].z * (90.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  gVector3Add(&amp;Normal, Normal, WeightingSN);<br>}</p><p>//计算3号三角形加权面法线，并加入顶点法线变量<br>if(nTriangleMask &amp; 4)<br>{<br>&nbsp;&nbsp;  WeightingSN.x = SurfaceNorms.Norms[3].x * (45.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  WeightingSN.y = SurfaceNorms.Norms[3].y * (45.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  WeightingSN.z = SurfaceNorms.Norms[3].z * (45.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  gVector3Add(&amp;Normal, Normal, WeightingSN);<br>}</p><p>//计算4号三角形加权面法线，并加入顶点法线变量<br>if(nTriangleMask &amp; 2)<br>{<br>&nbsp;&nbsp;  WeightingSN.x = SurfaceNorms.Norms[4].x * (45.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  WeightingSN.y = SurfaceNorms.Norms[4].y * (45.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  WeightingSN.z = SurfaceNorms.Norms[4].z * (45.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  gVector3Add(&amp;Normal, Normal, WeightingSN);<br>}</p><p>//计算5号三角形加权面法线，并加入顶点法线变量<br>if(nTriangleMask &amp; 1)<br>{<br>&nbsp;&nbsp;  WeightingSN.x = SurfaceNorms.Norms[5].x * (90.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  WeightingSN.y = SurfaceNorms.Norms[5].y * (90.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  WeightingSN.z = SurfaceNorms.Norms[5].z * (90.0f / SurfaceNorms.Deno);<br>&nbsp;&nbsp;  gVector3Add(&amp;Normal, Normal, WeightingSN);<br>}</p><p>//单位化法线<br>gVector3Normalize(&amp;Normal, Normal);</p><p>//函数结束，返回TRUE<br>return true;<br>}</p></div>
+		</div></div>
+
+		<div class="footer" id="detailArticleFooter_ptkaiapt4bxy_baiduscarticle">
+		 			<div class="time-cang">收藏于 2010-05-30</div>
+		 						<div class="link-src">来自于百度空间</div>
+			
+
+			<div class="complaint">
+				<span class="__complaintTips">文章有问题？<a href="http://qingting.baidu.com/index?pid=26" target="_blank" class="__complaintBtn">点击这里</a>反馈给我们</span>
+				<span class="__qingtingTips" style="display:none;">已收到您提交的URL, 要反馈更多问题请继续<a href="http://qingting.baidu.com/index?pid=26" target="_blank">点击这里</a></span>
+				<div class="add-ask-act"><iframe src="./saved_resource(1).html" name="addAskAct" scrolling="no" frameborder="0"></iframe><form method="post" target="addAskAct" class="__addAskForm" action="https://wenzhang.baidu.com/add/ask">
+					<input type="hidden" class="__addAskParam" name="param" value="">
+				</form></div>
+			</div>
+		</div>
+	</div>
+	<script src="./pcsArticle.js.下载"></script>
+	
+
+	
+	
+
+	
+
+	
+</div>
+
+
+<script type="text/javascript">document.write(unescape("%3Cscript src='" + document.location.protocol + "//hm.baidu.com/h.js%3F19f7e3b89626f41825e5c15696da95c5' type='text/javascript'%3E%3C/script%3E"));</script><script src="./h.js.下载" type="text/javascript"></script>
+
+
+
+</body></html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0157)https://wenzhang.bdstatic.com/page/content/?uid=1275475847&key=e0a6fb2aa91a91eb-1426763500&is_share=0&expire=1626159683&sign=34077c53618d22716a5afd6ac5d0bbd9 -->
+<html id="doc" class=" "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			
+		
+		<meta http-equiv="Content-Language" content="zh-cn">
+	
+	<title>  百度网盘 文章 </title>
+	
+        <meta content="百度网盘·收藏,书签,笔记" name="keywords">
+        <meta content="百度网盘·收藏可以帮您轻松收集网络中的图片、文章、网址。您可以随时随地浏览自己收藏的内容。" name="description">
+	
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://swenzhang.baidu.com/js/lib/jquery/1_9_1.js" src="./1_9_1.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lib/jh" src="./jh.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="kit/loadElm" src="./loadElm.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="kit/fitImageWidth" src="./fitImageWidth.js.下载"></script><!--<base href="http://1">--><base href=".">
+
+	
+		<link href="https://swenzhang.baidu.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link href="https://swenzhang.baidu.com/img/favicon.ico" rel="icon">
+	
+	
+		<link href="./global.css" type="text/css" rel="stylesheet" media="all">	
+	
+	<link href="./pcsArticle.css" type="text/css" rel="stylesheet" media="all">
+	<script>var __CONF__ = {};</script>
+	
+		<script src="./2_1_5.js.下载"></script>	
+	
+</head>
+<body id="" class=" ">
+	<!--[if IE ]>
+		<!--[if lt IE 7]><div class="page is-ie lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+		<!--[if IE 7]><div class="page is-ie lt-ie9 lt-ie8"><![endif]-->
+		<!--[if IE 8]><div class="page is-ie lt-ie9"><![endif]-->
+		<!--[if gt IE 8]><div class="page is-ie"><!--<![endif]-->
+	<!--<![endif]-->
+	<!--[if ! IE ]><!--><div class="page"><!--<![endif]-->
+	
+
+	
+
+	
+	
+
+	<div id="pcsArticle_ptkaiapt4bxy_baiduscarticle" class="pcs-article_ptkaiapt4bxy_baiduscarticle">
+
+		<div class="pcs-article-box_ptkaiapt4bxy_baiduscarticle"><h1 class="pcs-article-title_ptkaiapt4bxy_baiduscarticle" id="detailArticleTitle_ptkaiapt4bxy_baiduscarticle">【超级大转载】常用的D3D变换相关函数（3）</h1><div class="pcs-article-c_ptkaiapt4bxy_baiduscarticle">
+		 			<div class="pcs-article-toos_ptkaiapt4bxy_baiduscarticle">
+				<div class="tags-list clearfix"><ul>
+				 					<li>空间</li>
+				 				</ul></div>
+				<div class="note"></div>
+			</div>
+		 			<div class="pcs-article-content_ptkaiapt4bxy_baiduscarticle" id="detailArticleContent_ptkaiapt4bxy_baiduscarticle"><p>D3DXMatrixMultiply 函数</p><p>--------------------------------------------------------------------------------</p><p>两个矩阵相乘。</p><p>定义：</p><p>D3DXMATRIX *WINAPI D3DXMatrixMultiply(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXMATRIX *pOut,&nbsp;&nbsp;&nbsp;  CONST D3DXMATRIX *pM1,&nbsp;&nbsp;&nbsp;  CONST D3DXMATRIX *pM2);参数：</p><p>pOut</p><p>[in, out] 指向D3DXMATRIX 结构的矩阵乘积。</p><p>pM1</p><p>[in] 指向D3DXMATRIX 结构的源矩阵。</p><p>pM2</p><p>[in] 指向D3DXMATRIX 结构的源矩阵。</p><p>返回值：</p><p>指向 D3DXMATRIX 结构的两个矩阵相乘的积矩阵。</p><p> </p><p>说明：</p><p>本函数主要让两个矩阵相乘，表达的意思就是矩阵1变换后，接着就是矩阵2变换。如公式(Out = M1 * M2)，其实在C＋＋里，完全可以像公式那里操作，不用这个函数。</p><p>返回值是跟参数pOut 值是一样的。通过这种方法可以让D3DXMatrixMultiply 作为其它函数的参数。</p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/09/129135.aspx">http://blog.csdn.net/caimouse/archive/2004/10/09/129135.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXMatrixIdentity 函数</p><p>--------------------------------------------------------------------------------</p><p>创建一个单位矩阵。</p><p>定义：</p><p>D3DXMATRIX *D3DXMatrixIdentity(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXMATRIX *pOut);参数：</p><p>pOut</p><p>[in, out] 指向D3DXMATRIX结构的返回单位矩阵。</p><p>返回值：</p><p>指向D3DXMATRIX 结构的单位矩阵。</p><p> </p><p>说明：</p><p>单位矩阵就是除了[1,1][2,2][3,3][4,4]对角线系数为1外，其它系数全部为0。当用单位矩阵去乘以任何其它顶点向量时，都不会改变，但可方便地修改单位矩阵为旋转，平移和缩放矩阵。</p><p>返回值是跟pOut 参数返回值是一样的，这样可以让本函数成为其它函数的参数。</p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/09/129019.aspx">http://blog.csdn.net/caimouse/archive/2004/10/09/129019.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXMatrixTranspose 函数</p><p>--------------------------------------------------------------------------------</p><p>把一个矩阵转置并返回这个矩阵。</p><p>定义：</p><p>D3DXMATRIX *WINAPI D3DXMatrixTranspose(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXMATRIX *pOut,&nbsp;&nbsp;&nbsp;  CONST D3DXMATRIX *pM);参数：</p><p>pOut</p><p>[in, out] 指向D3DXMATRIX 结构的操作结果矩阵。</p><p>pM</p><p>[in] 指向D3DXMATRIX 结构的源矩阵。</p><p>返回值：</p><p>指向D3DXMATRIX 结构的转置矩阵。</p><p> </p><p>说明：</p><p>函数返回值跟pOut 参数返回值是一样的。这样可以让函数D3DXMatrixTranspose作为其它函数的参数使用。</p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/11/132060.aspx">http://blog.csdn.net/caimouse/archive/2004/10/11/132060.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXMatrixInverse 函数</p><p>--------------------------------------------------------------------------------</p><p>计算矩阵的逆矩阵。</p><p>定义：</p><p>D3DXMATRIX *WINAPI D3DXMatrixInverse(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXMATRIX *pOut,&nbsp;&nbsp;&nbsp;  FLOAT *pDeterminant,&nbsp;&nbsp;&nbsp;  CONST D3DXMATRIX *pM);参数：</p><p>pOut</p><p>[in, out] 指向D3DXMATRIX结构的逆矩阵。</p><p>pDeterminant</p><p>[in, out] 指向FLOAT 类型的对角线[1,1][2,2][3,3][4,4]积，如果不需要，可以设置为 NULL。</p><p>pM</p><p>[in] 指向 D3DXMATRIX 结构源矩阵。</p><p>返回值：</p><p>指向D3DXMATRIX 结构的逆矩阵。如果没有逆矩阵，就返回NULL值。</p><p>返回值是跟pOut 参数的返回值是一样的，这样可以让本函数成为其它函数的参数。</p><p> </p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/09/129062.aspx">http://blog.csdn.net/caimouse/archive/2004/10/09/129062.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXMatrixScaling 函数</p><p>--------------------------------------------------------------------------------</p><p>创建一个沿着X,Y和Z轴方向缩放矩阵。</p><p>定义：</p><p>D3DXMATRIX *WINAPI D3DXMatrixScaling(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXMATRIX *pOut,&nbsp;&nbsp;&nbsp;  FLOAT sx,&nbsp;&nbsp;&nbsp;  FLOAT sy,&nbsp;&nbsp;&nbsp;  FLOAT sz);参数：</p><p>pOut</p><p>[in, out] 指向D3DXMATRIX 结构的操作结果矩阵。</p><p>sx</p><p>[in] 沿着X轴的缩放系数。</p><p>sy</p><p>[in] 沿着Y轴的缩放系数。</p><p>sz</p><p>[in]  沿着Z轴的缩放系数。</p><p>返回值：</p><p>指向D3DXMATRIX 的缩放矩阵。</p><p> </p><p>说明：</p><p> </p><p>函数返回值跟pOut 参数返回值是一样的。这样可以让函数D3DXMatrixScaling作为其它函数的参数使用。</p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/11/132022.aspx">http://blog.csdn.net/caimouse/archive/2004/10/11/132022.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXMatrixRotationX 函数</p><p>--------------------------------------------------------------------------------</p><p>创建绕着X轴旋转矩阵。</p><p>定义：</p><p>D3DXMATRIX *WINAPI D3DXMatrixRotationX(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXMATRIX *pOut,&nbsp;&nbsp;&nbsp;  FLOAT Angle);参数：</p><p>pOut</p><p>[in, out] 指向D3DXMATRIX 结构的操作结果矩阵。</p><p>Angle</p><p>[in] 绕着X轴旋转的角度（单位是弧度）。角度计算方法是当朝着旋转轴的原点看去时，顺时针方向为正值。</p><p>返回值：</p><p>指向D3DXMATRIX 结构的绕着X轴旋转矩阵。</p><p> </p><p>说明：</p><p>函数返回值跟pOut 参数返回值是一样的。这样可以让函数D3DXMatrixRotationX作为其它函数的参数使用。</p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/11/131998.aspx">http://blog.csdn.net/caimouse/archive/2004/10/11/131998.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXMatrixRotationY 函数</p><p>--------------------------------------------------------------------------------</p><p>创建绕着Y轴旋转矩阵。</p><p>定义：</p><p>D3DXMATRIX *WINAPI D3DXMatrixRotationY(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXMATRIX *pOut,&nbsp;&nbsp;&nbsp;  FLOAT Angle);参数：</p><p>pOut</p><p>[in, out] 指向D3DXMATRIX 结构的操作结果矩阵。</p><p>Angle</p><p>[in] 绕着Y轴旋转的角度（单位是弧度）。角度计算方法是当朝着旋转轴的原点看去时，顺时针方向为正值。</p><p>返回值：</p><p>指向D3DXMATRIX 结构的绕着Y轴旋转矩阵。</p><p>说明：</p><p>函数返回值跟pOut 参数返回值是一样的。这样可以让函数D3DXMatrixRotationY作为其它函数的参数使用。</p><p>函数信息：</p><p> </p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/11/132005.aspx">http://blog.csdn.net/caimouse/archive/2004/10/11/132005.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXMatrixRotationZ 函数</p><p>--------------------------------------------------------------------------------</p><p>创建绕着Z轴旋转矩阵。</p><p>定义：</p><p>D3DXMATRIX *WINAPI D3DXMatrixRotationZ(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXMATRIX *pOut,&nbsp;&nbsp;&nbsp;  FLOAT Angle);Parameters</p><p>pOut</p><p>[in, out] 指向D3DXMATRIX 结构的操作结果矩阵。</p><p>Angle</p><p>[in] 绕着Z轴旋转的角度（单位是弧度）。角度计算方法是当从Z正轴朝着Z轴的原点看去时，顺时针方向为正值。</p><p>返回值：</p><p>指向D3DXMATRIX 结构的绕着Z轴旋转矩阵。</p><p> </p><p>说明：</p><p>函数返回值跟pOut 参数返回值是一样的。这样可以让函数D3DXMatrixRotationZ作为其它函数的参数使用。</p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/11/132016.aspx">http://blog.csdn.net/caimouse/archive/2004/10/11/132016.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXMatrixRotationAxis 函数</p><p>--------------------------------------------------------------------------------</p><p>创建一个可以绕着任意轴旋转的旋转矩阵。</p><p>定义：</p><p>D3DXMATRIX *WINAPI D3DXMatrixRotationAxis(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXMATRIX *pOut,&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV,&nbsp;&nbsp;&nbsp;  FLOAT Angle);参数：</p><p>pOut</p><p>[in, out] 指向D3DXMATRIX 结构的操作结果矩阵。</p><p>pV</p><p>[in] 指向任意轴向量。请参考 D3DXVECTOR3。</p><p>Angle</p><p>[in] 绕着任意轴旋转的角度（单位是弧度）。角度计算方法是当朝着旋转轴的原点看去时，顺时针方向为正值。</p><p>返回值：</p><p>指向绕着任意轴旋转的旋转矩阵。</p><p> </p><p>说明：</p><p>函数返回值跟pOut 参数返回值是一样的。这样可以让函数D3DXMatrixRotationAxis作为其它函数的参数使用。</p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/11/131978.aspx">http://blog.csdn.net/caimouse/archive/2004/10/11/131978.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXMatrixRotationYawPitchRoll 函数</p><p>--------------------------------------------------------------------------------</p><p>用指定的绕Y轴角度，绕X轴角度和Z轴角度创建旋转矩阵。</p><p>定义：</p><p>D3DXMATRIX *WINAPI D3DXMatrixRotationYawPitchRoll(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXMATRIX *pOut,&nbsp;&nbsp;&nbsp;  FLOAT Yaw,&nbsp;&nbsp;&nbsp;  FLOAT Pitch,&nbsp;&nbsp;&nbsp;  FLOAT Roll);参数：</p><p>pOut</p><p>[in, out] 指向D3DXMATRIX 结构的操作结果矩阵。</p><p>Yaw</p><p>[in] 绕着Y轴旋转角度（单位弧度）。</p><p>Pitch</p><p>[in] 绕着X轴旋转角度（单位弧度）。</p><p>Roll</p><p>[in] 绕着Z轴旋转角度（单位弧度）。</p><p>返回值：</p><p>指向D3DXMATRIX 结构的绕着Y,X和Z轴旋转的旋转矩阵。</p><p> </p><p>说明：</p><p>这样可以让函数D3DXMatrixRotationYawPitchRoll作为其它函数的参数使用。</p><p>这个矩阵的变换顺序是先绕着Z轴旋转，接着是绕着X轴旋转，最后是绕着Y轴旋转。这些都是相对于物体的本地坐标系来说的。</p><p><br>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/11/132008.aspx">http://blog.csdn.net/caimouse/archive/2004/10/11/132008.aspx</a></p></div>
+		</div></div>
+
+		<div class="footer" id="detailArticleFooter_ptkaiapt4bxy_baiduscarticle">
+		 			<div class="time-cang">收藏于 2009-06-03</div>
+		 						<div class="link-src">来自于百度空间</div>
+			
+
+			<div class="complaint">
+				<span class="__complaintTips">文章有问题？<a href="http://qingting.baidu.com/index?pid=26" target="_blank" class="__complaintBtn">点击这里</a>反馈给我们</span>
+				<span class="__qingtingTips" style="display:none;">已收到您提交的URL, 要反馈更多问题请继续<a href="http://qingting.baidu.com/index?pid=26" target="_blank">点击这里</a></span>
+				<div class="add-ask-act"><iframe src="./saved_resource(1).html" name="addAskAct" scrolling="no" frameborder="0"></iframe><form method="post" target="addAskAct" class="__addAskForm" action="https://wenzhang.baidu.com/add/ask">
+					<input type="hidden" class="__addAskParam" name="param" value="">
+				</form></div>
+			</div>
+		</div>
+	</div>
+	<script src="./pcsArticle.js.下载"></script>
+	
+
+	
+	
+
+	
+
+	
+</div>
+
+
+<script type="text/javascript">document.write(unescape("%3Cscript src='" + document.location.protocol + "//hm.baidu.com/h.js%3F19f7e3b89626f41825e5c15696da95c5' type='text/javascript'%3E%3C/script%3E"));</script><script src="./h.js.下载" type="text/javascript"></script>
+
+
+
+</body></html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0157)https://wenzhang.bdstatic.com/page/content/?uid=1275475847&key=e8eff53f018b42b7-1426763499&is_share=0&expire=1626159652&sign=728c142326ab783c92c74d766b26435d -->
+<html id="doc" class=" "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			
+		
+		<meta http-equiv="Content-Language" content="zh-cn">
+	
+	<title>  百度网盘 文章 </title>
+	
+        <meta content="百度网盘·收藏,书签,笔记" name="keywords">
+        <meta content="百度网盘·收藏可以帮您轻松收集网络中的图片、文章、网址。您可以随时随地浏览自己收藏的内容。" name="description">
+	
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://swenzhang.baidu.com/js/lib/jquery/1_9_1.js" src="./1_9_1.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lib/jh" src="./jh.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="kit/loadElm" src="./loadElm.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="kit/fitImageWidth" src="./fitImageWidth.js.下载"></script><!--<base href="http://1">--><base href=".">
+
+	
+		<link href="https://swenzhang.baidu.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link href="https://swenzhang.baidu.com/img/favicon.ico" rel="icon">
+	
+	
+		<link href="./global.css" type="text/css" rel="stylesheet" media="all">	
+	
+	<link href="./pcsArticle.css" type="text/css" rel="stylesheet" media="all">
+	<script>var __CONF__ = {};</script>
+	
+		<script src="./2_1_5.js.下载"></script>	
+	
+</head>
+<body id="" class=" ">
+	<!--[if IE ]>
+		<!--[if lt IE 7]><div class="page is-ie lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+		<!--[if IE 7]><div class="page is-ie lt-ie9 lt-ie8"><![endif]-->
+		<!--[if IE 8]><div class="page is-ie lt-ie9"><![endif]-->
+		<!--[if gt IE 8]><div class="page is-ie"><!--<![endif]-->
+	<!--<![endif]-->
+	<!--[if ! IE ]><!--><div class="page"><!--<![endif]-->
+	
+
+	
+
+	
+	
+
+	<div id="pcsArticle_ptkaiapt4bxy_baiduscarticle" class="pcs-article_ptkaiapt4bxy_baiduscarticle">
+
+		<div class="pcs-article-box_ptkaiapt4bxy_baiduscarticle"><h1 class="pcs-article-title_ptkaiapt4bxy_baiduscarticle" id="detailArticleTitle_ptkaiapt4bxy_baiduscarticle">【超级大转载】常用的D3D变换相关函数（2）</h1><div class="pcs-article-c_ptkaiapt4bxy_baiduscarticle">
+		 			<div class="pcs-article-toos_ptkaiapt4bxy_baiduscarticle">
+				<div class="tags-list clearfix"><ul>
+				 					<li>空间</li>
+				 				</ul></div>
+				<div class="note"></div>
+			</div>
+		 			<div class="pcs-article-content_ptkaiapt4bxy_baiduscarticle" id="detailArticleContent_ptkaiapt4bxy_baiduscarticle"><p>D3DXVec3Hermite 函数</p><p>--------------------------------------------------------------------------------</p><p>进行Hermite样条插值，这里是3D向量插值。</p><p>定义：</p><p>D3DXVECTOR3 *WINAPI D3DXVec3Hermite(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXVECTOR3 *pOut,&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV1,&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pT1,&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV2,&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pT2,&nbsp;&nbsp;&nbsp;  FLOAT s);Parameters</p><p>pOut</p><p>[in, out] 指向 D3DXVECTOR3 结构的操作结果。</p><p>pV1</p><p>[in] 指向 D3DXVECTOR3 结构的位置向量。</p><p>pT1</p><p>[in] 指向 D3DXVECTOR3 结构的切向量。</p><p>pV2</p><p>[in] 指向 D3DXVECTOR3 结构的位置向量。</p><p>pT2</p><p>[in] 指向 D3DXVECTOR3 结构的切向量。</p><p>s</p><p>[in] 权重系数，看说明。</p><p>返回值：</p><p>指向 D3DXVECTOR3结构的Hermite样条插值。</p><p> </p><p>说明：</p><p>D3DXVec3Hermite函数用Hermite 进行从(positionA, tangentA) 到 (positionB, tangentB) 插值，Hermite插值是导数值个数相等的情况下的插值多项式及插值余项。</p><p>因为样条很方面平滑地连接进去，又平滑地连接出来。坡度主要是由Q(s)属性来决定：</p><p>Q(s) = As3 + Bs2 + Cs + D (并且 Q'(s) = 3As2 + 2Bs + C) a) Q(0) = v1, so Q'(0) = t1b) Q(1) = v2, so Q'(1) = t2</p><p>v1就是 pV1，v2就是pV2, t1是pT1, t2是pT2。</p><p>这些参数是用解出 A, B, C, D。</p><p>D = v1  (from a)</p><p>C = t1  (from a)</p><p>3A + 2B = t2 - t-1 (substituting for C)</p><p>A + B = v2 - v1 - t1 (substituting for C and D)</p><p>从上面算出A,B,C,D就可以写出Q(s)来。</p><p>A = 2v1 - 2v2 + t2 + t1 B = 3v2 - 3v1 - 2t1 - t2C = t1 D = v1</p><p>然后就是：</p><p>Q(s) = (2v1 - 2v2 + t2 + t1)s3 + (3v2 - 3v1 - 2t1 - t2)s2 + t1s + v1.</p><p> </p><p>//重新整理后：</p><p> </p><p>Q(s) = (2s3 - 3s2 + 1)v1 + (-2s3 + 3s2)v2 + (s3 - 2s2 + s)t1 + (s3 - s2)t2.</p><p> </p><p>Hermite插值在控制动画方面非常有用，因为它通过每个控制点，因为那些点就相当于每个关键帧，并且它是位置及切线已明确,所以你可以很方便匹配每段曲线的起点与终点创建C2连续的曲线。</p><p>函数返回值跟pOut 参数返回值是一样的。这样可以让函数D3DXVec3Hermite作为其它函数的参数使用。</p><p> </p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/22/147087.aspx">http://blog.csdn.net/caimouse/archive/2004/10/22/147087.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXVec3Scale 函数</p><p>--------------------------------------------------------------------------------</p><p>缩放3-D向量。</p><p>定义：</p><p>D3DXVECTOR3 *D3DXVec3Scale(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXVECTOR3 *pOut,&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV,&nbsp;&nbsp;&nbsp;  FLOAT s);参数：</p><p>pOut</p><p>[in, out] 指向 D3DXVECTOR3 结构的操作结果。</p><p>pV</p><p>[in] 指向 D3DXVECTOR3 结构的向量。</p><p>s</p><p>[in] 缩放系数。</p><p>返回值：</p><p>指向D3DXVECTOR3 结构的缩放后的向量。</p><p>说明：</p><p>函数返回值跟pOut 参数返回值是一样的。这样可以让函数D3DXVec3Scale作为其它函数的参数使用。</p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/24/149674.aspx">http://blog.csdn.net/caimouse/archive/2004/10/24/149674.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXVec3BaryCentric 函数</p><p>--------------------------------------------------------------------------------</p><p>返回三个3-D坐标向量组成的三角形的重心坐标点。</p><p>定义：</p><p>D3DXVECTOR3 *WINAPI D3DXVec3BaryCentric(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXVECTOR3 *pOut,&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV1,&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV2,&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV3,&nbsp;&nbsp;&nbsp;  FLOAT f,&nbsp;&nbsp;&nbsp;  FLOAT g);参数：</p><p>pOut</p><p>[out, retval] 指向 D3DXVECTOR3 结构的操作结果。</p><p>pV1</p><p>[in] 指向 D3DXVECTOR3 结构的源向量。</p><p>pV2</p><p>[in] 指向 D3DXVECTOR3 结构的源向量。</p><p>pV3</p><p>[in] 指向 D3DXVECTOR3 结构的源向量。</p><p>f</p><p>[in] 重量系数，看说明。</p><p>g</p><p>[in] 重量系数，看说明。</p><p>返回值：</p><p>指向 D3DXVECTOR3 结构的重心坐标。</p><p> </p><p>说明：</p><p>D3DXVec3BaryCentric 函数主要用来说明三个点的关系。这个函数用下面的公式计算： V1 + f(V2-V1) + g(V3-V1).</p><p>任何在V1V2V3 三角形平面里的点，都可以用重心坐标 ( f,g)表示出来。参数f 控制V2 有多少重量，参数g 控制V3点有多少重量。最后1- f- g 控制V1有多少重量。</p><p>注意有下面的关系：</p><p>·&nbsp;&nbsp;  如果(f&gt;=0 &amp;&amp; g&gt;=0 &amp;&amp; 1-f-g&gt;=0)，那重心点在V1V2V3内。</p><p>·&nbsp;&nbsp;  如果(f==0 &amp;&amp; g&gt;=0 &amp;&amp; 1-f-g&gt;=0)，那么重心点在V1V3上。</p><p>·&nbsp;&nbsp;  如果(f&gt;=0 &amp;&amp; g==0 &amp;&amp; 1-f-g&gt;=0)，那么重心点在V1V2上。</p><p>·&nbsp;&nbsp;  如果(f&gt;=0 &amp;&amp; g&gt;=0 &amp;&amp; 1-f-g==0)，那么重心点在V2V3上。</p><p>函数返回值跟pOut 参数返回值是一样的。这样可以让函数D3DXVec3BaryCentric作为其它函数的参数使用。</p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/22/147054.aspx">http://blog.csdn.net/caimouse/archive/2004/10/22/147054.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXVec3CatmullRom 函数</p><p>--------------------------------------------------------------------------------</p><p>在3-D向量之间进行Catmull-Rom插值。</p><p>定义：</p><p>D3DXVECTOR3 *WINAPI D3DXVec3CatmullRom(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXVECTOR3 *pOut,&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV0,&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV1,&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV2,&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV3,&nbsp;&nbsp;&nbsp;  FLOAT s);参数：</p><p>pOut</p><p>[in, out] 指向 D3DXVECTOR3 结构的操作结果。</p><p>pV0</p><p>[in] 指向 D3DXVECTOR3 结构的位置向量。</p><p>pV1</p><p>[in] 指向 D3DXVECTOR3 结构的位置向量。</p><p>pV2</p><p>[in] 指向 D3DXVECTOR3 结构的位置向量。</p><p>pV3</p><p>[in] 指向 D3DXVECTOR3 结构的位置向量。</p><p>s</p><p>[in] 权重系数。看说明。</p><p>返回值：</p><p>指向 D3DXVECTOR3 结构的Catmull-Rom插值结果。</p><p> </p><p>说明：</p><p>比如给四点 (p1, p2, p3, p4)，要找一个函数Q(s)满足下面的条件：</p><p>Q(s) 是一个三次函数。</p><p>Q(s) 是当s范围从0到1时在p2 和p3 之间插值。</p><p>Q(s) 是当s为0时，它平行于p1 到 p3的连接线。</p><p>Q(s) 是当s为1时，它平行p2 到 p4的连线。</p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/22/147055.aspx">http://blog.csdn.net/caimouse/archive/2004/10/22/147055.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXVec3Transform 函数</p><p>--------------------------------------------------------------------------------</p><p>用矩阵把向量(x, y, z, 1)进行变换。</p><p>定义：</p><p>D3DXVECTOR4 *WINAPI D3DXVec3Transform(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXVECTOR4 *pOut,&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV,&nbsp;&nbsp;&nbsp;  CONST D3DXMATRIX *pM);Parameters</p><p>pOut</p><p>[in, out] 指向 D3DXVECTOR4 结构的操作结果。</p><p>pV</p><p>[in] 指向 D3DXVECTOR3 结构的源向量。</p><p>pM</p><p>[in] 指向 D3DXMATRIX 结构的变换矩阵。</p><p>返回值：</p><p>指向D3DXVECTOR4 结构的变换后的向量。</p><p> </p><p>说明：</p><p>这个函数用矩阵pM来变换向量pV (x, y, z, 1)。</p><p>函数返回值跟pOut 参数返回值是一样的。这样可以让函数D3DXVec3Transform作为其它函数的参数使用。</p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/24/149683.aspx">http://blog.csdn.net/caimouse/archive/2004/10/24/149683.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXVec3TransformCoord 函数</p><p>--------------------------------------------------------------------------------</p><p>用矩阵变换3-D向量，并且用w = 1投影结果。</p><p>定义：</p><p>D3DXVECTOR3 *WINAPI D3DXVec3TransformCoord(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXVECTOR3 *pOut,</p><p>&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV,</p><p>&nbsp;&nbsp;&nbsp;  CONST D3DXMATRIX *pM</p><p>);</p><p>Parameters</p><p>pOut</p><p>[in, out] 指向 D3DXVECTOR3 结构的操作结果。</p><p>pV</p><p>[in] 指向 D3DXVECTOR3 结构的向量。</p><p>pM</p><p>[in] 指向 D3DXMATRIX 结构的变换矩阵。</p><p>Return Value</p><p>指向 D3DXVECTOR3 结构的变换后的向量。</p><p> </p><p>说明：</p><p>这个函数用矩阵pM变换3-D向量pV (x, y, z, 1)，并且用w = 1投影结果。</p><p>函数返回值跟pOut 参数返回值是一样的。这样可以让函数D3DXVec3TransformCoord作为其它函数的参数使用。</p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/25/150516.aspx">http://blog.csdn.net/caimouse/archive/2004/10/25/150516.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXVec3TransformNormal 函数</p><p>--------------------------------------------------------------------------------</p><p>用矩阵变换3-D向量标准形式。</p><p>定义：</p><p>D3DXVECTOR3 *WINAPI D3DXVec3TransformNormal(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXVECTOR3 *pOut,</p><p>&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV,</p><p>&nbsp;&nbsp;&nbsp;  CONST D3DXMATRIX *pM</p><p>);</p><p>Parameters</p><p>pOut</p><p>[in, out] 指向 D3DXVECTOR3 结果的操作结果。</p><p>pV</p><p>[in] 指向 D3DXVECTOR3 结构的向量。</p><p>pM</p><p>[in] 指向 D3DXMATRIX 结构的矩阵。</p><p>返回值：</p><p>指向 D3DXVECTOR3 结构的变换后的向量。</p><p> </p><p>说明：</p><p>这个函数用矩阵pM变换向量pV标准形式 (x, y, z, 0)，不是齐次坐标形式。</p><p>如果一个非仿射矩阵变换，那么这个矩阵要作逆运算后再转置才传给本函数。</p><p>函数返回值跟pOut 参数返回值是一样的。这样可以让函数D3DXVec3TransformNormal作为其它函数的参数使用。</p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/25/150523.aspx">http://blog.csdn.net/caimouse/archive/2004/10/25/150523.aspx</a></p><p>--------------------------------------------------------------------------------</p><p> </p><p>D3DXVec3Unproject 函数</p><p>--------------------------------------------------------------------------------</p><p>把向量从屏幕空间投影到对象空间。</p><p>定义：</p><p>D3DXVECTOR3 *WINAPI D3DXVec3Unproject(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;  D3DXVECTOR3 *pOut,</p><p>&nbsp;&nbsp;&nbsp;  CONST D3DXVECTOR3 *pV,</p><p>&nbsp;&nbsp;&nbsp;  CONST D3DVIEWPORT9 *pViewport,</p><p>&nbsp;&nbsp;&nbsp;  CONST D3DXMATRIX *pProjection,</p><p>&nbsp;&nbsp;&nbsp;  CONST D3DXMATRIX *pView,</p><p>&nbsp;&nbsp;&nbsp;  CONST D3DXMATRIX *pWorld</p><p>);</p><p>Parameters</p><p>pOut</p><p>[in, out] 指向 D3DXVECTOR3 结构的操作结果。</p><p>pV</p><p>[in] 指向 D3DXVECTOR3 的向量。</p><p>pViewport</p><p>[in] 指向 D3DVIEWPORT9 结构的视口。</p><p>pProjection</p><p>[in] 指向 D3DXMATRIX 结构的投影矩阵。</p><p>pView</p><p>[in] 指向 D3DXMATRIX 结构的视变换矩阵。</p><p>pWorld</p><p>[in] 指向 D3DXMATRIX 结构的世界变换矩阵。</p><p>返回值：</p><p>指向 D3DXVECTOR3 结构的向量，它是把向量从屏幕空间投影到对象空间的结果。</p><p> </p><p>说明：</p><p>函数返回值跟pOut 参数返回值是一样的。这样可以让函数D3DXVec3Unproject作为其它函数的参数使用。</p><p>函数信息：</p><p>Header<br> d3dx9math.h<br> <br>Import library<br> d3dx9.lib<br> <br>Minimum operating systems<br> Windows 98<br> </p><p><br>本文来自CSDN博客，转载请标明出处：<a href="http://blog.csdn.net/caimouse/archive/2004/10/25/150535.aspx">http://blog.csdn.net/caimouse/archive/2004/10/25/150535.aspx</a></p></div>
+		</div></div>
+
+		<div class="footer" id="detailArticleFooter_ptkaiapt4bxy_baiduscarticle">
+		 			<div class="time-cang">收藏于 2009-06-03</div>
+		 						<div class="link-src">来自于百度空间</div>
+			
+
+			<div class="complaint">
+				<span class="__complaintTips">文章有问题？<a href="http://qingting.baidu.com/index?pid=26" target="_blank" class="__complaintBtn">点击这里</a>反馈给我们</span>
+				<span class="__qingtingTips" style="display:none;">已收到您提交的URL, 要反馈更多问题请继续<a href="http://qingting.baidu.com/index?pid=26" target="_blank">点击这里</a></span>
+				<div class="add-ask-act"><iframe src="./saved_resource.html" name="addAskAct" scrolling="no" frameborder="0"></iframe><form method="post" target="addAskAct" class="__addAskForm" action="https://wenzhang.baidu.com/add/ask">
+					<input type="hidden" class="__addAskParam" name="param" value="">
+				</form></div>
+			</div>
+		</div>
+	</div>
+	<script src="./pcsArticle.js.下载"></script>
+	
+
+	
+	
+
+	
+
+	
+</div>
+
+
+<script type="text/javascript">document.write(unescape("%3Cscript src='" + document.location.protocol + "//hm.baidu.com/h.js%3F19f7e3b89626f41825e5c15696da95c5' type='text/javascript'%3E%3C/script%3E"));</script><script src="./h.js.下载" type="text/javascript"></script>
+
+
+
+</body></html>

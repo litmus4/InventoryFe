@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0157)https://wenzhang.bdstatic.com/page/content/?uid=1275475847&key=d1440490aa210864-1426763502&is_share=0&expire=1626159774&sign=b8e9fd052609e281c3d7ad4e551c9503 -->
+<html id="doc" class=" "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			
+		
+		<meta http-equiv="Content-Language" content="zh-cn">
+	
+	<title>  百度网盘 文章 </title>
+	
+        <meta content="百度网盘·收藏,书签,笔记" name="keywords">
+        <meta content="百度网盘·收藏可以帮您轻松收集网络中的图片、文章、网址。您可以随时随地浏览自己收藏的内容。" name="description">
+	
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://swenzhang.baidu.com/js/lib/jquery/1_9_1.js" src="./1_9_1.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lib/jh" src="./jh.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="kit/loadElm" src="./loadElm.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="kit/fitImageWidth" src="./fitImageWidth.js.下载"></script><!--<base href="http://1">--><base href=".">
+
+	
+		<link href="https://swenzhang.baidu.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link href="https://swenzhang.baidu.com/img/favicon.ico" rel="icon">
+	
+	
+		<link href="./global.css" type="text/css" rel="stylesheet" media="all">	
+	
+	<link href="./pcsArticle.css" type="text/css" rel="stylesheet" media="all">
+	<script>var __CONF__ = {};</script>
+	
+		<script src="./2_1_5.js.下载"></script>	
+	
+</head>
+<body id="" class=" ">
+	<!--[if IE ]>
+		<!--[if lt IE 7]><div class="page is-ie lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+		<!--[if IE 7]><div class="page is-ie lt-ie9 lt-ie8"><![endif]-->
+		<!--[if IE 8]><div class="page is-ie lt-ie9"><![endif]-->
+		<!--[if gt IE 8]><div class="page is-ie"><!--<![endif]-->
+	<!--<![endif]-->
+	<!--[if ! IE ]><!--><div class="page"><!--<![endif]-->
+	
+
+	
+
+	
+	
+
+	<div id="pcsArticle_ptkaiapt4bxy_baiduscarticle" class="pcs-article_ptkaiapt4bxy_baiduscarticle">
+
+		<div class="pcs-article-box_ptkaiapt4bxy_baiduscarticle"><h1 class="pcs-article-title_ptkaiapt4bxy_baiduscarticle" id="detailArticleTitle_ptkaiapt4bxy_baiduscarticle">我的第一个Direct3D程序——第一个三角形</h1><div class="pcs-article-c_ptkaiapt4bxy_baiduscarticle">
+		 			<div class="pcs-article-toos_ptkaiapt4bxy_baiduscarticle">
+				<div class="tags-list clearfix"><ul>
+				 					<li>空间</li>
+				 				</ul></div>
+				<div class="note"></div>
+			</div>
+		 			<div class="pcs-article-content_ptkaiapt4bxy_baiduscarticle" id="detailArticleContent_ptkaiapt4bxy_baiduscarticle"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  话说学D3D已经有2个月了，一个礼拜之前才刚刚进入实践阶段，终于画出了我第一个三角形，庆祝下~~不过晚了点。。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;   这个程序是用自己编写的类实现的，用到VertexBuffer的同时也用了一个IndexBuffer，当初调试的时候因为IB里的顶点顺序反了，所以三角形显示的是反面，看不见。。我那个着急啊，最后问题还是找到了，程序也运行成功了，心也就平静了下来。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  别的不说了，上源代码：</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hero.h文件</p><p>//#pragma once<br>#include "windows.h"<br>#include "d3d9.h"<br>#include "d3d9types.h"</p><p>struct MYVERTEX<br>{<br>FLOAT x,y,z,rhw;<br>DWORD color;<br>};<br>#define MYFVF (D3DFVF_XYZRHW|D3DFVF_DIFFUSE)<br>#define SafeRelease(p) if(p!=NULL){p-&gt;Release();p=NULL;}</p><p><br>class hero<br>{<br>LPDIRECT3D9 m_pD3D;<br>LPDIRECT3DDEVICE9 m_pD3DDevice;<br>LPDIRECT3DVERTEXBUFFER9 m_pVB;<br>LPDIRECT3DINDEXBUFFER9 m_pIB;<br>public:<br>hero(void);<br>virtual HRESULT Init(HWND xhwnd);<br>virtual HRESULT Load();<br>virtual HRESULT Render();<br>virtual HRESULT Clean();<br>virtual HRESULT Destroy();<br>~hero(void);<br>};</p><p>&nbsp;&nbsp;  &nbsp;&nbsp;  hero.cpp文件</p><p><br>#include "hero.h"<br>#include "windows.h"<br>#include "d3d9.h"<br>#include "d3d9types.h"</p><p>hero::hero(void)<br>{<br>}</p><p>HRESULT hero::Init(HWND xhwnd)<br>{<br>m_pD3D=Direct3DCreate9(D3D_SDK_VERSION);<br>if(m_pD3D==NULL) return E_FAIL;</p><p>D3DDISPLAYMODE d3ddm;<br>if(FAILED(m_pD3D-&gt;GetAdapterDisplayMode(D3DADAPTER_DEFAULT,&amp;d3ddm))) return E_FAIL;</p><p>D3DPRESENT_PARAMETERS d3dpp;<br>ZeroMemory(&amp;d3dpp,sizeof(d3dpp));<br>d3dpp.Windowed=TRUE;<br>d3dpp.SwapEffect=D3DSWAPEFFECT_DISCARD;<br>d3dpp.BackBufferFormat=d3ddm.Format;</p><p>if(FAILED(m_pD3D-&gt;CreateDevice(D3DADAPTER_DEFAULT,D3DDEVTYPE_HAL,xhwnd,D3DCREATE_SOFTWARE_VERTEXPROCESSING,&amp;d3dpp,&amp;m_pD3DDevice)))<br>&nbsp;&nbsp;  return E_FAIL;</p><p>return S_OK;<br>}</p><p>HRESULT hero::Load()<br>{<br>VOID *pVertices;<br>WORD *pIndices;<br>MYVERTEX cVertices[]=<br>{<br>&nbsp;&nbsp;  {400.0f,150.0f,0.5f,1.0f,0xffff0000,},<br>&nbsp;&nbsp;  {226.8f,450.0f,0.5f,1.0f,0xffff0000,},<br>&nbsp;&nbsp;  {573.2f,450.0f,0.5f,1.0f,0xffff0000,},<br>};<br>WORD cIndices[]={0,2,1};</p><p>if(FAILED(m_pD3DDevice-&gt;CreateVertexBuffer(3*sizeof(MYVERTEX),0,MYFVF,D3DPOOL_DEFAULT,&amp;m_pVB,NULL)))<br>&nbsp;&nbsp;  return E_FAIL;<br>if(FAILED(m_pD3DDevice-&gt;CreateIndexBuffer(3*sizeof(WORD),0,D3DFMT_INDEX16,D3DPOOL_DEFAULT,&amp;m_pIB,NULL)))<br>&nbsp;&nbsp;  return E_FAIL;<br>if(FAILED(m_pVB-&gt;Lock(0,sizeof(cVertices),(void **)&amp;pVertices,0))) return E_FAIL;<br>memcpy(pVertices,cVertices,sizeof(cVertices));<br>m_pVB-&gt;Unlock();<br>if(FAILED(m_pIB-&gt;Lock(0,sizeof(cIndices),(void **)&amp;pIndices,0))) return E_FAIL;<br>memcpy(pIndices,cIndices,sizeof(cIndices));<br>m_pIB-&gt;Unlock();</p><p>return S_OK;<br>}</p><p>HRESULT hero::Render()<br>{<br>if(m_pD3DDevice==NULL) return E_FAIL;</p><p>m_pD3DDevice-&gt;Clear(0,NULL,D3DCLEAR_TARGET,0xff000000,1.0f,0);<br>m_pD3DDevice-&gt;BeginScene();</p><p>m_pD3DDevice-&gt;SetStreamSource(0,m_pVB,0,sizeof(MYVERTEX));<br>m_pD3DDevice-&gt;SetFVF(MYFVF);<br>m_pD3DDevice-&gt;SetIndices(m_pIB);<br>m_pD3DDevice-&gt;DrawIndexedPrimitive(D3DPT_TRIANGLEFAN,0,0,3,0,1);</p><p>m_pD3DDevice-&gt;EndScene();<br>m_pD3DDevice-&gt;Present(NULL,NULL,NULL,NULL);</p><p>return S_OK;<br>}</p><p>HRESULT hero::Clean()<br>{<br>if(m_pD3D==NULL || m_pD3DDevice==NULL) return E_FAIL;<br>SafeRelease(m_pIB);<br>SafeRelease(m_pVB);<br>return S_OK;<br>}</p><p>HRESULT hero::Destroy()<br>{<br>if(m_pVB!=NULL || m_pIB!=NULL) return E_FAIL;<br>SafeRelease(m_pD3DDevice);<br>SafeRelease(m_pD3D);<br>return S_OK;<br>}</p><p>hero::~hero(void)<br>{<br>}</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  main.cpp文件</p><p>#include "windows.h"<br>#include "d3d9.h"<br>#include "d3d9types.h"<br>#include "hero.h"</p><p>LRESULT CALLBACK WndProc(HWND,UINT,WPARAM,LPARAM);<br>wchar_t szWcName[]=L"MyWindow";<br>BOOL bActive=TRUE;</p><p>int WINAPI WinMain(HINSTANCE hThis,HINSTANCE hPrev,LPSTR lpszArgs,int nWinMode)<br>{<br>HWND hwnd;<br>MSG msg;<br>WNDCLASS mywc;<br>hero *myhero;</p><p>mywc.hInstance=hThis;<br>mywc.lpszClassName=szWcName;<br>mywc.lpfnWndProc=WndProc;<br>mywc.style=0;<br>mywc.hIcon=LoadIcon(NULL,MAKEINTRESOURCE(IDI_APPLICATION));<br>mywc.hCursor=LoadCursor(NULL,IDC_ARROW);<br>mywc.lpszMenuName=NULL;<br>mywc.cbClsExtra=0;<br>mywc.cbWndExtra=0;<br>mywc.hbrBackground=(HBRUSH)GetStockObject(BLACK_BRUSH);<br><br>if(!RegisterClass(&amp;mywc)) return 0;</p><p>DWORD dwWindowStyle=WS_POPUP|WS_BORDER|WS_CAPTION|WS_SYSMENU|WS_MINIMIZEBOX|WS_VISIBLE;<br>DWORD dwWidth=800;<br>DWORD dwHeight=600;<br>RECT rc;<br>SetRect(&amp;rc,0,0,dwWidth,dwHeight);<br>AdjustWindowRect(&amp;rc,dwWindowStyle,FALSE);</p><p>hwnd=CreateWindow(szWcName,L"New Hero Class Direct3D Test",dwWindowStyle,CW_USEDEFAULT,CW_USEDEFAULT,rc.right-rc.left,rc.bottom-rc.top,NULL,NULL,hThis,NULL);<br><br>BOOL bGotMsg;<br>myhero=new hero();<br>if(SUCCEEDED(myhero-&gt;Init(hwnd)))<br>{<br>&nbsp;&nbsp;  ShowWindow(hwnd,nWinMode);<br>&nbsp;&nbsp;  if(SUCCEEDED(myhero-&gt;Load()))<br>&nbsp;&nbsp;  {<br>&nbsp;&nbsp;&nbsp;  do{<br>&nbsp;&nbsp;&nbsp;&nbsp;  if(bActive) bGotMsg=PeekMessage(&amp;msg,NULL,0U,0U,PM_REMOVE);<br>&nbsp;&nbsp;&nbsp;&nbsp;  else bGotMsg=GetMessage(&amp;msg,NULL,0U,0U);<br>&nbsp;&nbsp;&nbsp;&nbsp;  if(bGotMsg)<br>&nbsp;&nbsp;&nbsp;&nbsp;  {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  TranslateMessage(&amp;msg);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DispatchMessage(&amp;msg);<br>&nbsp;&nbsp;&nbsp;&nbsp;  }<br>&nbsp;&nbsp;&nbsp;&nbsp;  else if(bActive)<br>&nbsp;&nbsp;&nbsp;&nbsp;  {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  if(FAILED(myhero-&gt;Render()))<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  delete myhero;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  return 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  }<br>&nbsp;&nbsp;&nbsp;&nbsp;  }<br>&nbsp;&nbsp;&nbsp;  }while(WM_QUIT!=msg.message);<br>&nbsp;&nbsp;  }<br>&nbsp;&nbsp;  else<br>&nbsp;&nbsp;  {<br>&nbsp;&nbsp;&nbsp;  delete myhero;<br>&nbsp;&nbsp;&nbsp;  return 0;<br>&nbsp;&nbsp;  }<br>}<br>else<br>{<br>&nbsp;&nbsp;  delete myhero;<br>&nbsp;&nbsp;  return 0;<br>}<br>if(FAILED(myhero-&gt;Clean()))<br>{<br>&nbsp;&nbsp;  delete myhero;<br>&nbsp;&nbsp;  return 0;<br>}<br>if(FAILED(myhero-&gt;Destroy()))<br>{<br>&nbsp;&nbsp;  delete myhero;<br>&nbsp;&nbsp;  return 0;<br>}<br>delete myhero;<br>return msg.wParam;<br>}</p><p>LRESULT CALLBACK WndProc(HWND hwnd,UINT message,WPARAM wParam,LPARAM lParam)<br>{<br>switch(message)<br>{<br>case WM_DESTROY:<br>&nbsp;&nbsp;  PostQuitMessage(WM_QUIT);<br>&nbsp;&nbsp;  break;<br>case WM_KEYDOWN:<br>&nbsp;&nbsp;  switch(wParam)<br>&nbsp;&nbsp;  {<br>&nbsp;&nbsp;  case VK_ESCAPE:<br>&nbsp;&nbsp;&nbsp;  PostQuitMessage(WM_QUIT);<br>&nbsp;&nbsp;&nbsp;  break;<br>&nbsp;&nbsp;  case VK_F1:<br>&nbsp;&nbsp;&nbsp;  bActive=FALSE;<br>&nbsp;&nbsp;&nbsp;  MessageBox(hwnd,L"help",L"help",MB_OK);<br>&nbsp;&nbsp;&nbsp;  bActive=TRUE;<br>&nbsp;&nbsp;  }<br>&nbsp;&nbsp;  break;<br>}<br>return DefWindowProc(hwnd,message,wParam,lParam);<br>}</p><p>运行效果：</p><p> </p><img class="blogimg" small="0" src="./5af0f52e2e0f2b754fc2261b.jpg"></div>
+		</div></div>
+
+		<div class="footer" id="detailArticleFooter_ptkaiapt4bxy_baiduscarticle">
+		 			<div class="time-cang">收藏于 2009-06-17</div>
+		 						<div class="link-src">来自于百度空间</div>
+			
+
+			<div class="complaint">
+				<span class="__complaintTips">文章有问题？<a href="http://qingting.baidu.com/index?pid=26" target="_blank" class="__complaintBtn">点击这里</a>反馈给我们</span>
+				<span class="__qingtingTips" style="display:none;">已收到您提交的URL, 要反馈更多问题请继续<a href="http://qingting.baidu.com/index?pid=26" target="_blank">点击这里</a></span>
+				<div class="add-ask-act"><iframe src="./saved_resource.html" name="addAskAct" scrolling="no" frameborder="0"></iframe><form method="post" target="addAskAct" class="__addAskForm" action="https://wenzhang.baidu.com/add/ask">
+					<input type="hidden" class="__addAskParam" name="param" value="">
+				</form></div>
+			</div>
+		</div>
+	</div>
+	<script src="./pcsArticle.js.下载"></script>
+	
+
+	
+	
+
+	
+
+	
+</div>
+
+
+<script type="text/javascript">document.write(unescape("%3Cscript src='" + document.location.protocol + "//hm.baidu.com/h.js%3F19f7e3b89626f41825e5c15696da95c5' type='text/javascript'%3E%3C/script%3E"));</script><script src="./h.js.下载" type="text/javascript"></script>
+
+
+
+</body></html>
