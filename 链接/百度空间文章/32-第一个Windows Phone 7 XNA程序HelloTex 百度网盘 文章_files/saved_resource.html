@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0157)https://wenzhang.bdstatic.com/page/content/?uid=1275475847&key=6d6aae7296aa80ef-1426763516&is_share=0&expire=1626251508&sign=07b9183241651f98ff7e0d5c03f2fd1a -->
+<html id="doc" class=" "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			
+		
+		<meta http-equiv="Content-Language" content="zh-cn">
+	
+	<title>  百度网盘 文章 </title>
+	
+        <meta content="百度网盘·收藏,书签,笔记" name="keywords">
+        <meta content="百度网盘·收藏可以帮您轻松收集网络中的图片、文章、网址。您可以随时随地浏览自己收藏的内容。" name="description">
+	
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://swenzhang.baidu.com/js/lib/jquery/1_9_1.js" src="./1_9_1.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lib/jh" src="./jh.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="kit/loadElm" src="./loadElm.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="kit/fitImageWidth" src="./fitImageWidth.js.下载"></script><!--<base href="http://1">--><base href=".">
+
+	
+		<link href="https://swenzhang.baidu.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link href="https://swenzhang.baidu.com/img/favicon.ico" rel="icon">
+	
+	
+		<link href="./global.css" type="text/css" rel="stylesheet" media="all">	
+	
+	<link href="./pcsArticle.css" type="text/css" rel="stylesheet" media="all">
+	<script>var __CONF__ = {};</script>
+	
+		<script src="./2_1_5.js.下载"></script>	
+	
+</head>
+<body id="" class=" ">
+	<!--[if IE ]>
+		<!--[if lt IE 7]><div class="page is-ie lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+		<!--[if IE 7]><div class="page is-ie lt-ie9 lt-ie8"><![endif]-->
+		<!--[if IE 8]><div class="page is-ie lt-ie9"><![endif]-->
+		<!--[if gt IE 8]><div class="page is-ie"><!--<![endif]-->
+	<!--<![endif]-->
+	<!--[if ! IE ]><!--><div class="page"><!--<![endif]-->
+	
+
+	
+
+	
+	
+
+	<div id="pcsArticle_ptkaiapt4bxy_baiduscarticle" class="pcs-article_ptkaiapt4bxy_baiduscarticle">
+
+		<div class="pcs-article-box_ptkaiapt4bxy_baiduscarticle"><h1 class="pcs-article-title_ptkaiapt4bxy_baiduscarticle" id="detailArticleTitle_ptkaiapt4bxy_baiduscarticle">第一个Windows Phone 7 XNA程序HelloTex</h1><div class="pcs-article-c_ptkaiapt4bxy_baiduscarticle">
+		 			<div class="pcs-article-toos_ptkaiapt4bxy_baiduscarticle">
+				<div class="tags-list clearfix"><ul>
+				 					<li>空间</li>
+				 				</ul></div>
+				<div class="note"></div>
+			</div>
+		 			<div class="pcs-article-content_ptkaiapt4bxy_baiduscarticle" id="detailArticleContent_ptkaiapt4bxy_baiduscarticle"><p>最近几个月一直在关注Windows Phone 7手机系统，很想体验一把WP7的开发。这不最近有钱了，买了个大硬盘，装上了WIN7，终于可以尝试一把了！Let's go！</p><p>首先先去微软MSDN官方网站下载整套开发工具，包括了所有开发WP7程序所用到的东西，VS2010 Express Edition&nbsp;for Windows Phone、WP7模拟器、Silverlight 4 SDK、XNA Game Studio 4.0以及Expression Blend 4。成功安装完后，就可以动手了。</p><p>先到MSDN上看看入门视频，有中文字幕的哦~~，地址是 <a href="http://msdn.microsoft.com/zh-cn/ff728584.aspx">http://msdn.microsoft.com/zh-cn/ff728584.aspx</a>&nbsp;。然后照着他讲的方法来了一遍，当然有些变量名啊数值啊之类的跟他的不一样，按自己习惯走了。</p><p>启动VS2010 Express Edition for Windows Phone（当然我已经装了VS2010旗舰版，但是还是这个版本WP7开发功能比较全，所以还是用它了），点击New Project...，然后选择XNA Game Studio 4.0分类下的Windows Phone Game (4.0)模板，如下图：</p><p><img class="blogimg" src="./fd024ddda02e827b5982ddbf.jpg" width="620" height="390" small="0"></p><p>输入项目名称和解决方案名称，指定一个路径，在这里我的项目名为HelloTex（你好纹理- -!），解决方案名为wp7GamePractices1，最后点击OK。</p><p>默认情况下，我们就可以直接为游戏主类（一般被命名为Game1,Game2....GameN）添加自己的内容了。首先添加两个成员变量_HelloTex和_v2TexPos，分别是要显示的2D纹理对象和记录显示位置的2D向量对象（显示位置被定义为纹理左上角在屏幕的位置）：</p><p><img class="blogimg" src="./cdaa5dd68cb9b16006088b5c.jpg" width="220" height="70" small="0"></p><p>在LoadContent方法中添加如下内容：</p><p><img class="blogimg" src="./5520fb3fabe754a355e7233e.jpg" small="0"></p><p>意思是调用Content对象的Load方法加载名为hellotex的图片文件为纹理，并将显示位置设为（0, 0）。这时我们就应该为项目添加文件资源了，右击解决方案资源管理器里的项目文件夹HelloTexContext，选择Add -&gt; Existing Item来添加文件，如下图：</p><p><img class="blogimg" src="./1ae77defef38ad59fdfa3cf0.jpg" small="0"></p><p>然后在Update方法中添加如下内容：</p><p><img class="blogimg" src="./9a22a98d324a095db31bbacb.jpg" small="0"></p><p>其过程是：先获得触屏输入状态的信息集合，如果集合数量大于0，也就是有触屏输入，那么就获取触屏的位置，计算纹理中心点位置到触屏位置的向量（使用纹理的宽度/高度除以2再加上纹理显示位置x/y坐标便是纹理中心点的位置了），然后用该向量来定义纹理的移动速度和移动方向，其速度为每帧移动该向量模长的1/10，方向为以该向量y坐标和x坐标比值求反正切所得的角度值。最后用上一次的纹理显示位置的x/y坐标加上移动速度乘以移动方向（角度）的余弦/正弦值，便得到了当前帧的纹理显示位置。</p><p>最后在Draw方法中添加如下内容：</p><p><img class="blogimg" src="./1510d0553cd9db8bb645ae56.jpg" width="526" height="121" small="0"></p><p>意思是开启2D精灵渲染，使用立即显示模式和Alpha混合，在_v2TexPos处绘制_HelloTex纹理，结束2D精灵渲染。</p><p>现在我们就可以开启调试了，看看效果如何，如下图：</p><p><img class="blogimg" src="./ff326a7e317055770dd7da06.jpg" small="0"></p><p>WP7开发入门体验到此告一段落，以后会有更多精彩内容哦~~~。<br></p></div>
+		</div></div>
+
+		<div class="footer" id="detailArticleFooter_ptkaiapt4bxy_baiduscarticle">
+		 			<div class="time-cang">收藏于 2011-01-02</div>
+		 						<div class="link-src">来自于百度空间</div>
+			
+
+			<div class="complaint">
+				<span class="__complaintTips">文章有问题？<a href="http://qingting.baidu.com/index?pid=26" target="_blank" class="__complaintBtn">点击这里</a>反馈给我们</span>
+				<span class="__qingtingTips" style="display:none;">已收到您提交的URL, 要反馈更多问题请继续<a href="http://qingting.baidu.com/index?pid=26" target="_blank">点击这里</a></span>
+				<div class="add-ask-act"><iframe src="./saved_resource(1).html" name="addAskAct" scrolling="no" frameborder="0"></iframe><form method="post" target="addAskAct" class="__addAskForm" action="https://wenzhang.baidu.com/add/ask">
+					<input type="hidden" class="__addAskParam" name="param" value="">
+				</form></div>
+			</div>
+		</div>
+	</div>
+	<script src="./pcsArticle.js.下载"></script>
+	
+
+	
+	
+
+	
+
+	
+</div>
+
+
+<script type="text/javascript">document.write(unescape("%3Cscript src='" + document.location.protocol + "//hm.baidu.com/h.js%3F19f7e3b89626f41825e5c15696da95c5' type='text/javascript'%3E%3C/script%3E"));</script><script src="./h.js.下载" type="text/javascript"></script>
+
+
+
+</body></html>
